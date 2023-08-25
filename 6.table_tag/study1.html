@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 태그</title>
+</head>
+<body>
+    <h1>표 - table</h1>
+    <p>table태그를 만들면 홈페이지에 보이지않는 표공간이 생성됨</p>
+    <p>table태그 안에서 컨텐츠 입력하는 순서는 언제나 (가로 tr태그)행을 먼저 만들고 행 안에 왼쪽부터 셀(td(일반내용셀)/th(제목내용셀))을 포함시킨다</p>
+    <hr>
+    <h2>셀 병합</h2>
+    <p>병합이 시작되는 셀을 찾아서 가로병합(colspan)/세로병합(rowspan)속성을 사용한다. 이 때, 병합이 되어져서 사라지는 셀은 태그를 지운다</p>
+    <p>tip)병합이 되기 전 모습의 표를 먼저 완성한 후 마지막에 병합작업을 한다.</p>
+
+    <table border="1">
+        <caption>대표시간표</caption>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <th>오전</th>
+            <td>휴무</td>
+            <td colspan="3" rowspan="2">출근</td>
+            <td rowspan="2">휴무</td>
+        </tr>
+        <tr>
+            <th>오후</th>
+            <td>출근</td>
+        </tr>
+    </table>
+</body>
+</html>

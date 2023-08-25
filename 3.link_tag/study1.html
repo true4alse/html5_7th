@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크태그</title>
+</head>
+<body>
+    <a href="../index.html">메인페이지 이동</a>
+    <a href="#warp2">절대경로와 상대경로 부분으로 이동</a>
+    <h1>속성</h1>
+    <p>태그에 부가적인 내용(보이는 컨텐츠를 제외한)을 입력할 때 사용하는 문법</p>
+    <p>속성은 시작태그에 한칸띄어서 입력한다.</p>
+    <p>속성표현법 - [속성명="속성값"]</p>
+    <p>속성은 모든태그에서 사용가능한 글로벌속성과 특정태그에서만 사용할 수 있는 로컬속성으로 나뉜다</p>
+    <p>태그에 속성은 2개이상 여러개를 입력할 수 있으며, 순서는 상관없다.</p>
+
+    <hr>
+    <h2>링크태그</h2>
+    <p>우리가 브라우저의 주소창에 www.naver.com쓰고 엔터치면 네이버서버에게 메인페이지를 보여달라는 요청을 하는것과 같이, a태그를 클릭하면 a태그에 href속성에 적용되어있는 절대경로 및 상대경로의 요청을 수행하는 것과 같다.</p>
+    <p>사용자가 링크태그를 클릭했을 때 href속성에 저장된 경로로 페이지를 이동시켜주는 태그</p>
+    <p>a태그는 href속성이 반드시 기재가 되어있어야 함</p>
+    <p>a태그는 target속성에 _blank값을 적용하여 새탭에서 열게할 수 있다.(기본값:_self)</p>
+    <p>a태그는 문맥적인 뜻이 없으며, 단순히 링크를 만들 때 사용하는 태그 -> 강조태그처럼 사용</p>
+
+    <a target="_blank" href="https://www.naver.com/" title="클릭 시 네이버페이지로 이동됩니다.">네이버로 바로가기</a>
+
+    <p><b>Lorem</b> ipsum dolor sit amet <a href="http://www.daum.net">consectetur</a> adipisicing elit. Assumenda repellat, laborum dolore debitis quidem dignissimos quod <a href="http://www.naver.com" target="_blank">ipsam nemo fugit eum illum nisi ex reprehenderit iure voluptates, quia quibusdam soluta quae!</a></p>
+
+    <h2 id="warp2">절대경로와 상대경로</h2>
+    <h3>절대경로</h3>
+    <p>웹사이트의 주소를 그대로 복사해서 가져온 경로 - 절대 안변하는 경로</p>
+    <h3>상대경로</h3>
+    <p>현재파일에서 목적지파일까지의 경로</p>
+    <ul>
+        <li>. -> 현재 파일의 위치를 불러옴</li>
+        <li>.. -> 현재 파일 기준 상위폴더의 위치를 불러옴</li>
+        <li>/ -> 폴더를 연다</li>
+    </ul>
+    <a href="../1.context_tag/study1.html">1.context_tag폴더안의 study1페이지로 이동</a>
+    <a href="./study2.html">a태그의 활용 study2페이지로 이동</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, quam, porro officia recusandae quia eveniet ex, cupiditate cumque veritatis fugit voluptatum reiciendis magnam corporis tempora ullam? Atque, iure animi? Similique.</p>
+</body>
+</html>

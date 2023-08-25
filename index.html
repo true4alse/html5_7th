@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>welcome!</title>
+        <style>
+            #gnb{
+                transition:all 0.7s ease 0s;
+                position:fixed;
+                right:-300px;
+                top:0;
+                width:300px;
+                height:100%;
+                background:orange;
+            }
+            #gnb:hover{
+                right:0;
+            }
+            #gnb:after{
+                content:"<";
+                position:absolute;
+                left:-30px;
+                top:50%;
+                margin-top:-15px;
+                width:30px;
+                height:30px;
+                background:orange;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #gnb>li{
+                position:relative;
+                padding:12px;
+                box-sizing: border-box;
+                border-bottom:1px solid #ccc;
+            }
+            #gnb>li:hover>ul{display:block;}
+            #gnb>li>ul{
+                position:absolute;
+                left:-300px;
+                top:0;
+                background:lightgoldenrodyellow;
+                width:300px;
+                display:none;
+                padding:10px;
+                box-sizing: border-box;
+            }
+            *{margin:0;padding:0;}
+            ul{list-style: none;}
+        </style>
+    </head>
+    <body>
+        <h1>hello html5!</h1>
+        <ul id="gnb">
+            <li>
+                context_tag
+                <ul>
+                    <li><a href="./1.context_tag/study1.html">문맥태그</a></li>
+                    <li><a href="./1.context_tag/study2.html">강조태그</a></li>
+                </ul>
+            </li>
+            <li>
+                list_tag
+                <ul>
+                    <li><a href="./2.list/study1.html">리스트의 개념</a></li>
+                    <li><a href="./2.list/study2.html">리스트의 중첩</a></li>
+                    <li><a href="./2.list/study3.html">정의형리스트</a></li>
+                </ul>
+            </li>
+            <li>
+                link_tag
+                <ul>
+                    <li><a href="./3.link_tag/study1.html">a태그의 개념</a> / <a href="./3.link_tag/study1.html#warp2">절대경로와 상대경로</a></li>
+                    <li><a href="./3.link_tag/study2.html">a태그의 활용</a></li>
+                </ul>
+            </li>
+            <li>
+                img_tag
+                <ul>
+                    <li><a href="./4.img_tag/study1.html">이미지태그</a></li>
+                </ul>
+            </li>
+            <li>
+                video_tag
+                <ul>
+                    <li><a href="./5.video_tag/study1.html">비디오태그</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            1. 엔터를 쳐서 줄바꿈을 해도 한번 띄어쓰기한 것으로 취급된다.<br>
+            2. 여러번        띄어쓰기를 해도 한번으로 취급된다.<br>
+            3. html파일을 해석하는 브라우저는 html파일의 위에서 아래 왼쪽에서 오른쪽순으로 해석한다.<br>
+            4. 구형 브라우저는 기본적으로 영문자를 인식하며, 영문자가 아닌 다른나라 언어 문자를 기본문자로 인식되지 않는다.(영어빼고 모름....)<br>
+            5. 태그의 포함관계를 빠르고 쉽게 파악하기 위해 들여쓰기를 사용함<br>
+            6. 포함하는 태그가 부모태그가 되고 포함되어지는 태그가 자식태그가 되는 관계<br>
+            <!-- 7. 이 내용은 브라우저가 해석하지 않습니다.(주석) -->
+            7. 마침태그가 없는 홀태그 구조는 단순한 역할만 수행하는 태그이다.
+        </p>
+    </body>
+</html>
+
+

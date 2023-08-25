@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - 폼(양식) 태그</title>
+</head>
+<body>
+    <h1>form양식태그</h1>b
+    <p>홈페이지를 사용하는 사용자가 내용을 입력할 수 있도록 미리 제공하는 양식</p>
+    <p>label태그는 입력박스에 대한 이름표태그이다.</p>
+    <p>label태그와 input태그를 서로 연결하기 위해서는 input태그의 id속성과 label태그의 for속성을 똑같이 적용하면 된다.</p>
+    <p>label태그가 눈에보이지 않아도 구성해야하며 css에서 안보이게 처리하는 방법을 사용한다.</p>
+    <p>input태그의 속성이 radio인 경우 name속성 값을 동일하게 적용하면 여러개의 radio타입 버튼중 1개만 선택되도록 할 수 있다.</p>
+    <p>input태그 중 type속성이 text로 적용되어있다면 짧은 한줄의 텍스트를 입력받을 용도로 사용하고, textarea태그는 장문의 텍스트를 입력 받을 때 사용한다.</p>
+    <p>form태그 안에서도 문맥태그를 자유롭게 사용할 수 있다.</p>
+    <hr>
+    <h1>사용되는 속성</h1>
+    <ul>
+        <li>value - 입력박스에 들어가는 실제정보</li>
+        <li>disabled - 선택한 입력박스를 비활성 처리</li>
+        <li>required - 선택한 입력박스의 실제정보를 필수적으로 입력받게 할 때 사용</li>
+        <li>selected - option태그가 선택된 상태로 페이지가 로딩되도록 할 때 사용</li>
+        <li>checked - type속성이 radio/checkbox인 태그가 체크된 상태로 로딩되도록 할 때 사용</li>
+    </ul>
+
+    <hr>
+
+    <form method="post" action="#">
+        <fieldset>
+            <legend>계정정보</legend>
+            <label for="user_id">아이디</label>
+            <input type="text" id="user_id" placeholder="아이디를 입력" value="true4alse" disabled>
+            <ul>
+                <li>아이디는 영소문자 (한글X)</li>
+                <li>아이디는 특수문자를 사용하시거나 띄어쓰기를 하시면 안됩니다.</li>
+            </ul>
+            <br>
+            <label for="user_pw">비밀번호</label>
+            <input type="password" id="user_pw" placeholder="영대소문자,특수문자 포함 8자리 이상 16자리 이하" required>
+            <br>
+            <label for="user_pw2">비밀번호확인</label>
+            <input type="password" id="user_pw2" required>
+            <h3><a href="#" target="_blank">비밀번호 입력규칙</a></h3>
+            <ul>
+                <li>영 소문자 대문자 조합의 8~16자</li>
+                <li>특수문자 최소 1개 사용</li>
+                <li>띄어쓰기 사용 금지</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="user_name">이름</label>
+            <input type="text" id="user_name" value="정현진" disabled>
+            <br>
+            <label for="user_birth">생년월일</label>
+            <input type="number" id="user_birth" value="1985" disabled>
+            <select>
+                <option>...월</option>
+                <option>1월</option>
+                <option>2월</option>
+                <option>3월</option>
+                <option selected>4월</option>
+                <option>5월</option>
+                <option>6월</option>
+                <option>7월</option>
+                <option>8월</option>
+                <option>9월</option>
+                <option>10월</option>
+                <option>11월</option>
+                <option>12월</option>
+            </select>
+            <input type="number" value="27" disabled>
+            <br>
+            <label>성별</label>
+            <input type="radio" id="man" name="user_gender" checked>
+            <label for="man">남자</label>
+            <input type="radio" id="woman" name="user_gender">
+            <label for="woman">여자</label>
+            <input type="radio" id="no_select" name="user_gender">
+            <label for="no_select">선택안함</label>
+            <br>
+            <label for="user_email">본인확인 이메일</label>
+            <input type="text" id="user_email" placeholder="사용하는 이메일 주소를 입력해주세요" value="true4alse@naver.com">
+            <button>인증</button>
+        </fieldset>
+        <fieldset>
+            <legend>기타정보</legend>
+            <label>취미</label>
+            <input type="checkbox" id="like1" checked>
+            <label for="like1">운동</label>
+            <input type="checkbox" id="like2">
+            <label for="like2">고양이 안마</label>
+            <input type="checkbox" id="like3">
+            <label for="like3">어항 관리</label>
+            <input type="checkbox" id="like4">
+            <label for="like4">제과제빵</label>
+            <input type="checkbox" id="like5">
+            <label for="like5">음악감상</label>
+            <br>
+            <label for="user_profile">자기소개</label>
+            <textarea id="user_profile" placeholder="자기소개글을 입력하시오">저는정현진입니다.</textarea>
+        </fieldset>
+        <input type="submit" value="회원가입하기">
+        <input type="reset" value="다시작성하기">
+    </form>
+</body>
+</html>
