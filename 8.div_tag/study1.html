@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역구성태그 - div</title>
+</head>
+<body>
+    <h1>영역구성태그 - div</h1>
+    <p>영역을 나눌 때 자유롭게 사용하는 태그</p>
+    <p>컨텐츠의 맥락에 따라서 영역을 자유롭게 나눌 때 사용</p>
+    <p>좌우로 나란히 배치되어있는 영역은 영역태그로 나누면 좋다</p>
+    <hr>
+
+    <h1>영역태그로 부터 파생되어 나온 태그들</h1>
+    <ul>
+        <li>header - 홈페이지의 머릿글 컨텐츠를 만들 때 사용(로고,주메뉴)</li>
+        <li>footer - 홈페이지의 꼬리말 컨텐츠를 만들 때 사용(하단로고,회사정보,운영정책 등)</li>
+        <li>main - 홈페이지의 전반적인 메인컨텐츠를 다룰 때 사용(main태그는 body태그안에 1개만 사용해야 함)</li>
+        <li>section/article - 영역태그와 같음.</li>
+        <li>nav - 홈페이지의 (2개이상의 다른 메뉴)메뉴단을 만들 때 사용</li>
+        <li>figure - 이미지 전용 영역태그(figcaption태그를 통해 삽화에대한 정보를 표기할 수 있다)</li>
+        <li>aside - 홈페이지 안에서 독립적인 사이드 컨텐츠를 만들 때 사용(전체 컨텐츠 공간안에 넣지않는것이 좋다.)</li>
+    </ul>
+
+    <aside class="sideMenu"></aside>
+    <div id="container">
+        <header>
+            <form action="#">
+                <h1><a href="#">logo</a></h1>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>...
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="leftSide">
+                <section class="news"></section>
+                <section class="shopitem"></section>
+                <section class="etc"></section>
+            </div>
+            <div class="rightSide">
+                <article class="login"></article>
+                <article class="ad"></article>
+                <div class="wea"></div>
+                <div class="stock"></div>
+                <div class="wid"></div>
+                <div class="whalead"></div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+
+    <hr>
+
+    <div>
+        <header></header>
+        <nav></nav>
+        <main></main>
+    </div>
+
+    <hr>
+
+    <div class="contents_wrap">
+        <header>
+            <div class="headerTop"></div>
+            <div class="headerBot"></div>
+        </header>
+        <main>
+            <div class="banner"></div>
+            <div class="con1"></div>
+            <div class="con2"></div>
+        </main>
+        <footer>
+            <div class="footerTop"></div>
+            <div class="footerBot">
+                <div class="corInfo"></div>
+                <div class="sns"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
