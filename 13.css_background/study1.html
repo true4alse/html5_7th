@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>background</h1>
+    <p>태그의 공간(테두리 안쪽 모든 공간)에 배경색 또는 배경이미지를 나타낼 때 사용하는 css속성</p>
+    <ul>
+        <li>    
+            <h3>background-color</h3>
+            <p>배경색상을 입력할 때 사용하는 속성</p>
+            <p>색상은 16진수 표기와 rgba표기방식으로도 표현할 수 있다</p>
+            <ul>
+                <li>16진수 - #000000</li>
+                <li>rgba - rgba(0,0,255,1)</li>
+            </ul>
+        </li>
+        <li>
+            <dl>
+                <dt>background-image</dt>
+                <dd>
+                    <p>배경이미지를 입력할 때 사용하는 속성</p>
+                    <p>background-image:url("상대경로")</p>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <h3>background-repeat</h3>
+            <p>배경이미지를 입력하면 자동으로 가로세로로(바둑판식)배치가 된다. 그 이유는 background-repeat:repeat 기본값이 설정되어 있기 때문이다.</p>
+            <ul>
+                <li>repeat-x -> 가로축으로만 반복</li>
+                <li>repeat-y -> 세로축으로만 반복</li>
+                <li>no-repeat -> 반복 안함</li>
+            </ul>
+        </li>
+        <li>
+            <dl>
+                <dt>background-position</dt>
+                <dd>
+                    <p>입력된 배경이미지의 위치를 x/y축 값으로 제어하는 속성</p>
+                    <p>기본값은 background-position:0 0 (태그의 좌상단 배치)</p>
+                    <p>background-position:x축좌표 y축좌표</p>
+                    <p>단위는 %단위를 사용할 수 있다</p>
+                    <p>left/right/top/bottom/center 키워드를 활용할 수 있다</p>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>background-size</dt>
+                <dd>
+                    <p>배경이미지의 가로세로 사이즈를 지정하는 속성</p>
+                    <p>auto라는 키워드를 사용할 수 있다.</p>
+                    <p>background-size:300px auto -> 배경이미지의 가로사이즈를 300픽셀에 맞추고 세로사이즈는 이미지가 갖는 종횡비 대로 자동계산해서 입력</p>
+                    <table border="1">
+                        <caption>cover와 contain방식 차이</caption>
+                        <tr>
+                            <th>cover</th>
+                            <td>태그의 공간에 배경이미지를 가득 채우는 방식(이 때 배경이미지가 확대 혹은 축소되는 과정에서 태그의 공간 밖으로 잘려나가도 신경쓰지 않는 방식)</td>
+                            <td rowspan="2">기본적으로 가로와 세로 사이즈의 종횡비는 유지 됨</td>
+                        </tr>
+                        <tr>
+                            <th>contain</th>
+                            <td>태그의 공간에 배경이미지를 넣되 절대 배경이미지가 잘리지 않는 선에서 채워넣을 수 있을만큼 최대한 넣는방식</td>
+                        </tr>
+                    </table>
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <h3>축약형 표현</h3>
+            <p>background:색상 이미지 반복속성 좌표 / 사이즈</p>
+            <p>축약형 표현은 선택적으로 입력할 수 있으나, 입력하지 않은 개별속성 값은 기본값으로 적용된다.</p>
+        </li>
+        <li>
+            <h3>배경색 - 그라데이션</h3>
+
+        </li>
+    </ul>
+    <p>calc()도구 사용법 - calc(100% - 50px) / css에서 수치를 입력할 때 계산식을 활용할 수 있다.</p>
+    <p>+,-,*(곱셈),/(나눗셈) -> 주의할 점 +,-부호는 앞뒤로 띄어쓰기를 할 것</p>
+    <p>계산식에서 사용될 단위를 입력할 수 있다</p>
+    <div class="box">background</div>
+    <div class="box2">blend / attachment</div>
+    <div class="box3">
+        여러 개의 배경이미지를 입력할 수 있다
+    </div>
+    <div class="box4"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*
+    #1. reset - 스타일 초기화 
+    각 태그마다 적용된 기본스타일을 없애줌
+*/
+*{margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight:inherit;font-size:inherit;}
+i,em,address{font-style:inherit;}
+
+/* 
+    #2. common - 공통스타일 (대부분 적용되는 스타일 - 상속개념을 사용해서 한번에 적용되도록)
+*/
+html{font-family: 'Times New Roman', Times, serif;font-size:14px;}
+body{background:ivory;}
+/* 
+    #3. layout - 대략적인 배치
+*/
+.wrap{
+    width:900px;
+    margin:0 auto;
+    background:url("../img/dream.jpg") no-repeat 100% 100%;
+}
+
+/* 
+    #4. detail - 상세디자인
+*/
+.wrap h2{
+    border-top:2px solid red;
+    border-bottom:2px solid red;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background:green;
+    color:#fff;
+    padding:12px 0;
+}
+.wrap h3{
+    border-bottom:2px solid red;
+    font-size: 30px;
+    font-weight: bold;
+    background:orange;
+    margin-top:10px;
+}
+.wrap p{
+    margin:10px 0;
+}
+.copy{
+    border-top:2px solid red;
+    padding-top:10px;
+    font-weight: bold;
+}

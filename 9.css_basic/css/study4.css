@@ -1,0 +1,27 @@
+html>body div.box>h2#title.tit{
+    color:red;
+}
+
+html div.box>h2#title.tit{
+    color:red;
+}
+div.box>h2#title.tit{color:blue;}
+div h2#title.tit{color:red;}
+h2#title.tit{color:blue;}
+h2#title{color:red;}
+#title{color:blue;}
+h2.tit{color:red;}
+.tit{color:green;}
+.tit{color:violet;}
+h2{color:red;background:red;}
+h2{color:blue;background:orange;}
+h2{color: red !important;}
+.tit{color: blue !important;}
+
+.parent{
+    color:blue;
+    border:1px solid black;
+}
+h1{
+    color:red;
+}

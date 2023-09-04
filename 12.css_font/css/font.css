@@ -1,0 +1,16 @@
+/* 글씨체 등록 */
+@font-face{
+    font-family:"내가설정한폰트1";
+    src:url("../font/Jua-Regular.ttf");
+}
+
+@font-face {
+    font-family:blackhan;
+    src: url("../font/BlackHanSans-Regular.ttf");
+}
+.f_jua{
+    font-family:"내가설정한폰트1";
+}
+.f_bhan{
+    font-family:blackhan;
+}

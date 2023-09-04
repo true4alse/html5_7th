@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>관계선택자</title>
+        <link rel="stylesheet" href="./css/study3.css">
+    </head>
+    <body>
+        <h1>관계선택자</h1>
+        <p>선택자부분에 태그의 포함관계를 사용해서 조건을 구성할 수 있다</p>
+        <hr>
+
+        <h2>자손선택자</h2>
+        <p>선택자부분에서 띄어쓰기를 하면(~안에 포함되어있는 자손중에서)라고 해석</p>
+        <hr>
+
+        <h2>자식선택자</h2>
+        <p>선택자부분에서 ">"를 사용하면(~안에 포함되어있는 자식중에서)라고 해석</p>
+
+        <h2 class="ab">형제선택자</h2>
+        <span>히히</span>
+        <p>선택자 부분에서 +,~을 사용하여 다음형제를 선택할 수 있다</p>
+        <p>+선택자는 선택한 태그의 다음형제 하나만 선택한다.</p>
+        <p>~선택자는 선택한 태그의 다음형제 여러개를 선택한다.</p>
+        <ul>
+            <li id="firstList">list1</li>
+            <li>list2</li>
+            <li class="li3">list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+        </ul>
+
+        <h2>순번선택자</h2>
+        <p>태그가 갖고있는 순서를 이용하여 선택할 수 있다.</p>
+        <p>태그명:nth-of-type() 괄호안에는 숫자나 수식을 입력하여 순번을 선택할 수 있다.</p>
+        <div class="box">
+            <p>text1</p>
+            <p>text2</p>
+            <p>text3</p>
+            <p>text4</p>
+            <p>text5</p>
+            <p>text6</p>
+        </div>
+        <hr>
+
+        <h2>속성선택자</h2>
+        <p>태그가 가지고 있는 속성을 조건으로 선택자를 구성할 수 있다.</p>
+        <p>태그명[속성명="속성값"]</p>
+        <p>태그명을 생략할 수 있다</p>
+        <p>속성값도 생략할 수 있다.-> [속성명]</p>
+        <a href="#" target="_blank">네이버로 바로가기</a>
+        <a href="www.daum.net">다음으로 바로가기</a>
+
+        <form action="#">
+            <label for="userName">이름</label>
+            <input type="text" id="userName">
+            <br>
+            <label for="userPw">비밀번호</label>
+            <input type="password" id="userPw">
+            <br>
+            <input type="checkbox" id="autoLogin" checked>
+            <label for="autoLogin">자동로그인</label>
+            <br>
+            <input type="submit" value="로그인">
+        </form>
+
+        
+
+    </body>
+</html>

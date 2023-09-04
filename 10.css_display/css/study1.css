@@ -1,0 +1,15 @@
+h1{
+    border:1px solid red;
+    /* width:400px;
+    height:400px; */
+}
+ul{
+    border:1px solid blue;
+    width:500px;
+}
+ul>li{border:1px solid black;}
+span{
+    border:1px solid green;
+    width:300px;
+}
+.box{display:inline-block;}

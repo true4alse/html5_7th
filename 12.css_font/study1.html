@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>font</h1>
+    <ul>
+        <li class="a">
+            <h2><i>font-size</i> -> 글씨의 크기를 지정하는 속성</h2>
+            <p>브라우저의 글씨크기 기본값은 16픽셀이다.</p>
+            <p>글씨의 가장 높은 부분에서 낮은 부분까지의 길이를 기준으로 한다.</p>
+            <p>1em -> 부모태그에 적용된 글씨크기</p>
+            <p>1rem -> html태그에 적용된 글씨크기</p>
+        </li>
+        <li class="b">
+            <h2>line-height -> 행간(글씨를 감싸는 보이지 않는 라인의 높이)</h2>
+            <p class="des">행간은 기본적으로 120%로 설정되어 있다.120%는 1.2 라고 소수로 써도 된다. line-height로 설정된 텍스트 공간 안에서 글자는 세로기준 중앙에 배치되는 특징을 갖는다.</p>
+        </li>
+        <li class="c">
+            <h2>font-weight -> 글씨의 굵기 설정</h2>
+            <p>글씨들마다 지원하는 굵기의 범위가 다르기 때문에 이를 잘 확인하여 사용</p>
+            <ul>
+                <li>bold - 두껍게</li>
+                <li>normal - 일반(기본값)</li>
+                <li>lighter - 얇게</li>
+                <li>100~900 100단위의 숫자를 사용해서 지정가능 - 숫자가 커질수록 굵어짐(기본값 400)</li>
+            </ul>
+        </li>
+        <li class="d">
+            <h2>font-style -> 글씨의 스타일 지정</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quo nam voluptatum maiores id quod facere aspernatur! Blanditiis ipsum, inventore quaerat quia, quod consectetur expedita earum pariatur, error esse aperiam.</p>
+            <address>경기도 성남시 분당구 미금동 그린컴퓨터아카데미 성남캠퍼스</address>
+        </li>
+        <li class="e">
+            <h2>letter-spacing -> 자간설정</h2>
+            <p>글자와 글자 사이의 간격 양수와 음수 둘다 사용 가능</p>
+        </li>
+        <li class="f">
+            <h2>word-spacing -> 단어와 단어 사이 간격 설정</h2>
+        </li>
+        <li class="g">
+            <h2>white-space -> 텍스트를 강제로 한줄로 나열되도록 설정</h2>
+            <ul>
+                <li>nowrap:텍스트 줄바꿈을 허용하지 않음</li>
+                <li>pre:텍스트르 줄바꿈을 허용하지 않으면서 텍스트가 쓰여진대로 br태그없이 줄바꿈을 허용함</li>
+            </ul>
+            <p>
+    Lorem ipsum dolor sit amet
+    conse
+    ct
+    etur adipisicing elit. Vero veniam pariatur voluptate? Velit a possimus sapiente dolore earum tempore sint molestiae repudiandae aliquam voluptatum ullam ratione consectetur dolorum, numquam expedita.
+            </p>
+        </li>
+        <li class="h">
+            <h2>text-indent -> 문단 들여쓰기</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita repudiandae optio tempora pariatur vero facere, maxime eum minima aliquid, voluptate tempore quis fuga nulla laborum saepe obcaecati dicta dolores labore.</p>
+        </li>
+        <li class="i">
+            <h2>text-decoration -> <a href="#">문장 꾸밈</a></h2>
+            <ul>
+                <li>underline 밑줄스타일</li>
+                <li>none 스타일 제거</li>
+                <li>line-through 취소선스타일</li>
+            </ul>
+        </li>
+        <li class="j">
+            <h2>text-align -> 글자(인라인요소) 정렬</h2>
+            <p>left(기본값)/right/center/justify(양쪽정렬->단어와 단어사이의 간격이 임의로 조절된다)</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex porro molestias magnam necessitatibus quo officiis, eum deleniti, a excepturi perferendis soluta at corrupti, veritatis ab sint nihil aut velit! ipsum dolor sit amet consectetur, adipisicing elit. Harum ex porro molestias magnam necessitatibus quo officiis, eum deleniti, a excepturi perferendis soluta at corrupti, veritatis ab sint nihil aut velitipsum dolor sit amet consectetur, adipisicing elit. Harum ex porro molestias magnam necessitatibus quo officiis, eum deleniti, a excepturi perferendis soluta at corrupti, veritatis ab sint nihil aut velitipsum dolor sit amet consectetur, adipisicing elit. Harum ex porro molestias magnam necessitatibus quo officiis, eum deleniti, a excepturi perferendis soluta at corrupti, veritatis ab sint nihil aut velit</p>
+        </li>
+        <li class="k">
+            <h2>word-break -> 단어 쪼개기</h2>
+            <p>텍스트가 줄바꿈이 되는 순간에 단어가 쪼개질지 안쪼개질지 결정하는 속성(기본값은 keep-all 단어가 쪼개지지 않는 선에서 줄바꿈이 된다.)</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis velit repudiandae commodi? Beatae molestias, labore iste nam qui est sit ipsa. Quibusdam cum officiis molestiae reiciendis exercitationem numquam alias. Lorem ipsum dolor sit met consectetur adipisicing elit. Atque eum necessitatibus, sint odit asperiores iste corrupti sunt quaerat ab et error temporibus reprehenderit obcaecati hic voluptatum quam dolor! Quam, nisi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptatem ipsam illo nam ipsa fuga mollitia dolorum nisi ducimus rem deleniti voluptas aut dolore, non officia, exercitationem nulla ipsum harum.</p>
+        </li>
+        <li class="l">
+            <h2>text-transform -> 영문자 대소문자 변경</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis assumenda velit quisquam illum quasi. Cum sit ducimus repudiandae earum dolore ut doloribus unde blanditiis nobis consequatur nulla aspernatur, nostrum eaque?</p>
+        </li>
+        <li class="m">
+            <h2>vertical-align</h2>
+            <p>인라인레벨 태그들은 기본적으로 baseline을 기준으로 정렬이 된다.</p>
+            <p>인라인요소끼리 수직 정렬할 때 사용하는 속성</p>
+            <p>baseline(기본값),top,middle,bottom</p>
+            <p>상속되지 않는다.</p>
+            <p>
+                <strong>strong tag</strong>
+                <i>i tag</i>
+            </p>
+        </li>
+    </ul>
+</body>
+</html>

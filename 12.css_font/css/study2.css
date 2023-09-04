@@ -1,0 +1,23 @@
+
+
+.f_jua{
+    font-family:"내가설정한폰트1";
+}
+.f20{font-size:20px;}
+.f30{font-size:30px;}
+.f20.f30{font-size:50px;}
+
+
+.f_bhan{
+    font-family:"blackhan";
+}
+
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.lotte_font{
+    font-family: 'Giants-Bold';
+}

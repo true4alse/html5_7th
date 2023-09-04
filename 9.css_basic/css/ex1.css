@@ -1,0 +1,10 @@
+.a{color:red;}
+.b{text-decoration: underline;}
+/* 밑줄스타일 */
+.c{color:blue;}
+.d{font-weight:bold;}
+/* 글씨굵게 */
+.e{font-style:italic;}
+/* 글씨기울이기 */
+.f{text-decoration: line-through;}
+/* 취소선스타일 */

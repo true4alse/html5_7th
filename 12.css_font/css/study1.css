@@ -1,0 +1,69 @@
+html{font-size: 14px;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;}
+.a{
+    /* font-size:30px; */
+}
+.a>h2{
+    font-size:2em;
+}
+.a>h2>i{font-size:2em;}
+.a>p:nth-of-type(1){
+    font-size:3rem;
+}
+.des{
+    border:1px solid black;
+    font-size:30px;
+    line-height:2;
+}
+.c>p{
+    font-weight:100;
+}
+.d>p{
+    font-style:italic;
+}
+.d>address{font-style:normal;}
+.e h2{
+    letter-spacing: 10px;
+}
+.f h2{
+    word-spacing: 50px;
+}
+.g p{
+    white-space:pre;
+    border:1px solid black;
+}
+.h p{
+    border:1px solid black;
+    text-indent:30px;
+    /* padding-left:30px; */
+}
+.i>ul{
+    text-decoration:line-through;
+}
+.i a{text-decoration:none;}
+.j p{
+    border:1px solid black;
+    text-align: justify;
+}
+.k p{
+    border:1px solid black;
+    text-align: justify;
+    word-break: break-all;
+}
+.l p{
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+}
+.m p{
+    font-size:30px;
+}
+.m p strong{
+    font-size:3em;
+    border:1px solid red;
+}
+.m p i{
+    border:1px solid blue;
+    font-size:0.5em;
+    vertical-align:baseline;
+}

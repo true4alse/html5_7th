@@ -1,0 +1,47 @@
+/* reset */
+*{margin:0;padding:0;}
+strong,b,h1,h2,h3,h4,h5,h6{
+    font-size:inherit;
+    font-weight:inherit;
+}
+a{color:inherit;text-decoration: none;}
+i,em,address{font-style: inherit;}
+
+/* common */
+html{
+    font-size: 20px; /* 1rem=20px */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+    font-family:"풀무원체";
+    src: url("../font/PulmuoneLOHASBold.woff");
+}
+
+/* layout */
+.contents{
+    width:980px;
+    margin:0 auto;
+}
+.contents h2{
+    margin-top:40px;
+    margin-bottom:35px;
+    font-family:"풀무원체",sans-serif;
+    font-size:22px;
+}
+.contents p{
+    margin:35px 0;
+}
+.contents .mt100{margin-top:100px;}
+.contents .sign {
+    margin-top: 70px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+    font-family: "풀무원체",sans-serif;
+}
+.contents .sign img{
+    display:inline-block;
+    /* border:1px solid blue; */
+    vertical-align: middle;
+    margin-left:20px;
+}

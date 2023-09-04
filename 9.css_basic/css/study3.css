@@ -1,0 +1,24 @@
+html h1{color:red;}
+html>h1{background:gray;}
+#firstList+li{color:blue;}
+.li3~li{color:green;}
+.box>p:nth-of-type(2n+1){background:gold;}
+.box>p:first-of-type{color:brown;}
+.box>p:last-of-type{color:blueviolet;}
+a[target="_blank"]{
+    color:green;
+}
+a[href="www.daum.net"]{
+    color:red;
+    text-decoration: line-through;
+}
+[checked]+label{
+    background:green;
+    color:white;
+}
+form>[for]{
+    font-style: italic;
+}
+.ab~p{
+    color:red;
+}

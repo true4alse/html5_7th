@@ -1,0 +1,62 @@
+*{
+    margin:0;padding:0;
+}
+.box{
+    font-size:100px;
+    padding:50px;
+    border:10px solid black;
+    background-color:rgba(214,34,176,0.32);
+    /* rgba(red,green,blue,alpha) alpha채널은 투명도를 의미하며 0이면 완전히 투명,1이면 불투명 */
+    background-color:#D622B0;
+    background-image:url("../img/cat.jpg");
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+    background-position:50%;
+    background-position:center;
+    background-position:calc(100% - 150px) calc(100% - 50px);
+    background-size:auto 300px; 
+    background-size:auto 100%;
+    background-size:contain;
+    /* background-size:100% auto; */
+
+    background-color:#D622B0;
+    background:#D622B0 url("../img/cat.jpg") no-repeat 0 0 / auto 100%;
+
+    /* width:300px; */
+    height:500px;
+}
+.box2{
+    width:1200px;
+    height:500px;
+    border:10px solid pink;
+    margin:0 auto;
+    /* 배경이미지를 축약형으로 입력하시오
+    배경이미지가 태그의 공간을 가득 채울 수 있도록
+    배경이미지가 태그의 공간안에서 가로세로기준 정중앙에 배치될 수 있도록
+    반복 속성은 없이
+    */
+    background:rgb(251, 86, 113) url("../img/cat.jpg") no-repeat 50% 50%/cover;
+    background-attachment: fixed;
+    background-blend-mode:lighten;
+}
+.box3{
+    border:10px solid black;
+    height:600px;
+    /* background-image:url("../img/cat.jpg"),url("../img/koala.jpg");
+    background-repeat:no-repeat,no-repeat;
+    background-position:0 0,100% 100%;
+    background-size:auto 50%,auto 50%; */
+    background:url("../img/koala.jpg") no-repeat 50% / auto 50%,url("../img/cat.jpg") no-repeat 0 0 / 50% auto;
+    background-blend-mode:difference;
+}
+.box4{
+    border:10px solid green;
+    height:600px;
+    width:600px;
+    margin-left:auto;
+    background-image:linear-gradient(45deg,red 50%,blue 70%,green 80%),url(../img/cat.jpg);
+    background-blend-mode: hue;
+    /* background-image:radial-gradient(red,green,blue); */
+    /* background-image:url(../img/cat.jpg); */
+    /* background-repeat:no-repeat; */
+}

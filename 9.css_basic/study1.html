@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일언어 css</title>
+    <link rel="stylesheet" href="./css/study1.css">
+    <style>
+        h1{color:red;background:lime;;;;;;;;;;}
+        li{color:blue;}
+    </style>
+</head>
+<body>
+    <h1>css</h1>
+    <p style="color:blue;">html태그를 꾸며주는 언어</p>
+    <hr>
+    <h2>기초문법</h2>
+    <p>css는 태그를 선택해서 스타일을 입력하는 언어. 태그를 선택하는 부분과 스타일이 입력되는 부분으로 나뉜다.</p>
+    <p>기초문법 - 선택자{스타일속성:스타일속성값;스타일속성:스타일속성값;}</p>
+    <p>선택자는 기본적으로 복수의 개념</p>
+    <ul>
+        <li>태그명 -> 태그명만 선택자로 기입</li>
+        <li>클래스명(중복사용가능) -> 접근(문)자 .을 사용</li>
+        <li>아이디명(중복사용불가능) -> 접근자 #을 사용</li>
+    </ul>
+    <p>;(세미콜론)은 스타일속성을 나누는 구분자로 사용된다</p>
+    <hr>
+    <h2>스타일 입력 방식</h2>
+    <ul>
+        <li>인라인스타일 - 태그에 직접 스타일속성을 사용</li>
+        <li>내부스타일시트 - style태그를 만들어서 사용</li>
+        <li>외부스타일시트 - style파일을 만들어서 연결하여 사용</li>
+    </ul>
+    <h3 id="deco1">인라인스타일 단점</h3>
+    <p class="redfont">태그를 일일이 선택하여 시작태그에 style속성을 사용하는 방식이기 때문에, 일괄 수정이 안된다.</p>
+    <h3>내부스타일시트방식 단점</h3>
+    <p class="redfont">스타일시트가 html파일안에 포함되어있기 때문에 여러 페이지를 동시에 일괄수정할 수 없다.</p>
+
+</body>
+</html>

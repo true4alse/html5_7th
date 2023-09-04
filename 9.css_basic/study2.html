@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단계적으로 적용되는 css</title>
+    <style>
+        h1{color:red;color:blue;background:yellow;}
+        h1{color:green;}
+        p.a{color:aquamarine;}
+        p .b{color:gray;}
+        p.b{color:gray;}
+        p.c{color:black;}
+        /* p태그 중에서 c라는 클래스를 갖고있는 p태그들을 선택 */
+        .a.b.c{text-decoration:underline;}
+        /* h1태그 중에서 a,b,c클래스를 전부 갖고있는 h1태그들을 선택 */
+    </style>
+</head>
+<body>
+    <h1>단계적으로 적용되는 css스타일</h1>
+    <p>css스타일을 해석하는 주체는 브라우저 마찬가지로 위에서 아래 왼쪽에서 오른쪽으로 해석한다.</p>
+    <p>새롭게 언급되지않은 스타일은 그대로 유지된다.</p>
+    <hr>
+
+    <h1 class="a b c d">클래스</h1>
+    <p class="a b c">클래스명은 두 개이상 여러개를 사용할 수 있다.</p>
+
+</body>
+</html>

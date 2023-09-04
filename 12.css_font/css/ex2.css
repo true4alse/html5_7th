@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+.contents_wrap{
+    border:5px solid black;
+    width:700px;
+    padding:10px;
+    margin:0 auto;
+}
+.contents_wrap h1{
+    font-size:50px;
+    border:1px solid black;
+}
+.contents_wrap p{
+    margin-top:20px;
+    border:1px solid black;
+    height:80px;
+}
+.contents_wrap ul{
+    border:1px solid black;
+    margin:30px 0;
+    height:100px;
+    padding:20px;
+    box-sizing: border-box;
+}

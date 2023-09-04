@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>박스모델 - boxmodel</h1>
+    <p>박스형 태그가 갖는 자세한 구조를 살펴보자</p>
+
+    <h2>박스모델의 4요소</h2>
+    <ul>
+        <li>컨텐츠박스</li>
+        <li>테두리</li>
+        <li>테두리 기준 바깥 여백</li>
+        <li>테두리 기준 안쪽 여백</li>
+    </ul>
+
+    <div class="box1">
+        <h2>테두리 - border</h2>
+        <p>태그의 형태를 보여주는 가장 가장자리 선</p>
+    </div>
+    <div class="box2">
+        <h2>테두리 기준 바깥쪽 여백 - margin</h2>
+        <p>테두리 기준 바깥 쪽 여백</p>
+        <p>바깥 쪽 여백은 인접한 태그를 밀어낸다.</p>
+        <p>밀어내지 못하는 상황이라면? 본인이 밀린다.</p>
+    </div>
+    <div class="box3">
+        <h2>테두리 기준 안쪽 여백 - padding</h2>
+        <p>안 쪽 여백은 컨텐츠박스를 밀어낸다</p>
+    </div>
+    <div class="box4">
+        <h2>컨텐츠박스</h2>
+        <p>글자나 이미지 영상 등 컨텐츠와 자식태그가 놓여지는 공간</p>
+        <p>box-sizing:content-box(기본 값) -> 컨텐츠박스의 크기는 width/height로 조절할 수 있다</p>
+        <p>width/height 기본적으로 px단위를 사용한다. 그리고 %단위를 사용할 수 있다.</p>
+        <p>box-sizing:border-box -> 테두리 굵기까지 포함해서 박스의 크기로 설정된다.</p>
+    </div>
+
+    <section class="s1">섹션1</section>
+    <section class="s2">섹션2</section>
+    <div class="s3">
+        <article>
+            <span>아티클1</span>
+        </article>
+    </div>
+</body>
+</html>
