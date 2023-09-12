@@ -1,0 +1,44 @@
+body{padding-bottom:400px;}
+*{
+    margin:0;
+    padding:0;
+}
+.parent{
+    border:10px solid red;
+    width:800px;
+}
+.parent h1{
+    border:10px solid blue;
+    width:50%;
+}
+.parent h1 b{
+    border:1px solid green;
+    display:block;
+    width:50%;
+}
+.box1{
+    border:1px solid red;
+    width:50vw;
+    height:50vh;
+    margin:100px auto;
+    background:darkcyan;
+}
+.box1 strong{
+    border:1px solid green;
+    display:block;
+    width:50%;
+}
+.box2{
+    border:10px solid black;
+    width:50vw;
+    height:50vw;
+    margin:calc((100vh - 50vw)/2) auto;
+    box-sizing: border-box;
+}
+.box3{
+    border:11px solid red;
+    min-height:150px;
+    /* width:50vw;
+    max-width:600px;
+    min-width:400px; */
+}

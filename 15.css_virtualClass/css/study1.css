@@ -1,0 +1,76 @@
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.box1{
+    border:1px solid black;
+}
+.box1:hover{
+    color:blue;
+}
+/* 마우스커서가 올려진 box1클래스 */
+
+/* box1클래스에 마우스를 올렸을 때
+안에있는 strong태그는 글씨색이 빨간색
+i태그는 글씨색이 오렌지색 */
+
+.box1:hover strong{color:red;}
+.box1:hover i{color:orange;}
+
+.box1 strong:hover{
+    text-decoration: underline;
+}
+.box1 i:hover{
+    text-decoration: line-through;
+}
+.box2:active{
+    letter-spacing: 10px;
+    background:#000;
+    color:#fff;
+}
+/* 브라우저는 사용자가 갔던 웹페이지 정보를 저장하고있다. - history저장 */
+a:link{
+    color:lime;
+}
+a:visited{
+    /* color:red;
+    text-decoration: line-through; */
+}
+.a:before{
+    content:"안";
+    border:1px solid red;
+    display:block;
+}
+.a:after{
+    content:"요";
+    border:1px solid blue;
+    display:inline-block;
+    width:50px;
+    height:50px;
+}
+.menu>li:before{
+    /* content:">"; */
+}
+.blank:after{
+    content:"";
+    width:12px;
+    height:12px;
+    margin-left:10px;
+    display:inline-block;
+    background:url("../img/SVG/blank.svg") no-repeat 50% / contain;
+}
+
+.btnStyle{
+    border:2px solid #5F892F;
+    display:inline-block;
+    padding:12px 34px;
+    color:#5F892F;
+    border-radius:30px;
+}
+.btnStyle:hover{
+    background:#5F892F;
+    color:#fff;
+}
+.btnStyle:active{
+    background:black;
+}

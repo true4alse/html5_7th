@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <div class="frame">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio iustusandae. Ea, aliquid velit.</div>
+    <h1>overflow</h1>
+
+
+
+
+
+
+
+
+    <p>흘러넘치는 컨텐츠에 대해서 대응하기 위한 css속성</p>
+    <p>전제 - 박스의 크기가 유동적이지않고 정해진 경우</p>
+    <ul>
+        <li>hidden -> 흘러넘친 컨텐츠 안보이게 하기</li>
+        <li>visible -> 그냥 보이게 하기 (기본값)</li>
+        <li>auto -> 포함된 컨텐츠의 양에 따라 컨텐츠 박스를 넘어갈 정도의 컨텐츠 양이라면 스크롤바를 활성화하고 그렇지 않다면, 스크롤바를 안보이게 하는 방법</li>
+        <li>scroll -> 포함된 컨텐츠의 양과 관계없이 언제나 스크롤바를 표시하는 방법</li>
+    </ul>
+    <p class="box hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde harum laborum, suscipit neque hic eius veritatis voluptates doloremque nihil delectus sapiente quaerat ducimus ipsam deserunt fuga quibusdam doloribus temporibus voluptatum. orem ipsum dolor sit amet consectetur adipisicing elit. Unde harum laborum, suscipit neque hic eius veritatis voluptates doloremque nihil delectus sapiente quaerat ducimus ipsam deserunt fuga quibusdam doloribus temporibus voluptatum.
+    </p>
+    <p class="box scroll">
+        Lortatum.
+    </p>
+    <p class="box auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde harum laborum, suscipit neibusdam doloribus temporibus voluptatum.
+        ng elit. Unde harum laborum, suscipit neibusdam doloribus temporibus voluptatum
+        ng elit. Unde harum laborum, suscipit neibusdam doloribus temporibus voluptatum
+    </p>
+    
+    <p class="box over_y">
+        Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum. Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum.Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum.
+    </p>
+
+    <p class="box over_x">
+        Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum. Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum.Lorem ipsum dolor sit amet consectetur adi quibusdam doloribus temporibus voluptatum.
+    </p>
+
+
+
+    <p class="box visible">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde harum laborum, suscipit neque hic eius veritatis voluptates doloremque nihil delectus sapiente quaerat ducimus ipsam deserunt fuga quibusdam doloribus temporibus voluptatum. orem ipsum dolor sit amet consectetur adipisicing elit. Unde harum laborum, suscipit neque hic eius veritatis voluptates doloremque nihil delectus sapiente quaerat ducimus ipsam deserunt fuga quibusdam doloribus temporibus voluptatum.
+    </p>
+
+    
+    
+</body>
+</html>

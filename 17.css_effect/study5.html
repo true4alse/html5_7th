@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix-blend-mode</title>
+    <style>
+        figure{
+            border:1px solid red;
+            background:blue;
+        }
+        figcaption{
+            border:1px solid lime;
+            padding:30px;
+            background:orange;
+            mix-blend-mode:hard-light;
+        }
+        img{
+            mix-blend-mode:difference;
+        }
+        .box{
+            height:700px;
+            background:blue url("./img/coffee.jpg") no-repeat 0 0;
+            background-blend-mode: difference;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <figcaption>coffee</figcaption>
+        <img src="./img/coffee.jpg" alt="커피사진">
+    </figure>
+    <div class="box"></div>
+</body>
+</html>

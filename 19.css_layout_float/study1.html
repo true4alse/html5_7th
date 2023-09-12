@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head> 
+<body>
+    <h1>float</h1>
+    <p>블록 태그들을 좌우로 나란히 배치하는데 목적이 있다.</p>
+    <p>선택한 태그를 둥~~~ 띄워서 부모의 컨텐트박스 안에서 왼쪽 혹은 오른쪽으로 배치하는 방법</p>
+    <p>플로팅된 자식태그들은 집나간 자식태그가 된다 -> 부모태그가 자식태그로 인식하지 않는다. ->부모태그가 자식태그를 포함할만큼 높이를 자동으로 측정할 수 없다.</p>
+
+    <h1>clear</h1>
+    <p>float를 해제할 때 사용하는 속성</p>
+    <p>clear속성이 적용된 태그는 앞서 만들어진 형제태그 중에서 float되어있는 태그 중 가장 아래까지 내려와있는 태그의 바로 밑에 배치되는 특징을 가지고 있다.</p>
+
+    <div class="parent">
+        <section class="a">A-section</section>
+        <p class="clearbox">clearbox</p>
+        <section class="b">B-section</section>
+        <section class="c">C-section</section>
+        
+    </div>
+    <p class="nextP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, cum? Quia numquam et ipsa voluptas nulla aut laboriosam ab deserunt dignissimos, obcaecati harum voluptate, minus similique. A sit quod odio?</p>
+</body>
+</html>

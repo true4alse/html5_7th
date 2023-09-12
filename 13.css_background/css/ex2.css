@@ -22,9 +22,13 @@ html{
 .contents{
     width:980px;
     margin:0 auto;
+    background:pink;
+    padding-top:40px;
+    padding-bottom:35px;
+    /* border:1px solid red; */
 }
 .contents h2{
-    margin-top:40px;
+    /* margin-top:40px; */
     margin-bottom:35px;
     font-family:"풀무원체",sans-serif;
     font-size:22px;
@@ -37,6 +41,7 @@ html{
     margin-top: 70px;
     font-size: 30px;
     /* border: 1px solid red; */
+    margin-bottom:0;
     font-family: "풀무원체",sans-serif;
 }
 .contents .sign img{

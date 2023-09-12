@@ -1,0 +1,159 @@
+/* common */
+html{
+    font-size:12px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* layout */
+/* 큰 영역 -> 작은 영역 사이즈와 배치 */
+.container{
+    width:920px;
+    margin:0 auto;
+}
+header{}
+main{}
+footer{
+    background:#f0f0f0;
+}
+.innerFrame{
+    width:920px;
+    margin:0 auto;
+}
+
+/* header */
+header{
+    border:10px solid red;
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    border:1px solid blue;
+}
+nav{
+    border:5px solid darkgoldenrod;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav>ul{
+   display:flex;
+}
+nav>ul>li{
+    border:1px solid blue;
+}
+.lnb{
+    /* border:10px solid aqua; */
+    margin-bottom: 24px;;
+    background:#4C4C4C;
+    padding:0 8px;
+    border-radius:0 0 8px 8px;
+}
+.lnb>li{
+    padding:4px 8px;
+    color:#fff;
+    text-transform: uppercase;
+    background:url("../img/t.gif") no-repeat 100% 50%;
+}
+.lnb>li:last-of-type{
+    background:none;
+}
+.gnb{
+    /* border:10px solid lime; */
+}
+.gnb>li{
+    
+}
+.gnb>li>a{
+    display:block;
+    padding:0 25px;
+    border:1px solid red;
+}
+
+/* main */
+main{
+    margin-top:30px;
+}
+.contents{
+    border:1px solid blue;
+    display:flex;
+}
+.contents>section{
+    border:1px solid green;
+    flex:1;
+    /* flex-basis:0%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    margin-right:27px;
+    box-sizing: border-box;
+}
+.contents>section:last-of-type{margin-right:0;}
+
+.quickMenu{
+    border:1px solid red;
+    display:flex;
+}
+.quickMenu>li{
+    border:1px solid blue;
+}
+
+
+.contents>section>h3{
+    border-bottom:1px solid #dfdfdf;
+    margin-bottom:14px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contents>section>h3>a{
+    border:1px solid red;
+}
+
+.noticeList{
+    border:1px solid red;
+}
+.noticeList>li{
+    border:1px solid blue;
+    margin-bottom:4px;
+    display:flex;
+    justify-content: space-between;
+}
+.noticeList>li:last-of-type{
+    margin-bottom:0;
+}
+.noticeList>li>span{
+    border:1px solid black;
+}
+
+.innerFrame{
+    border:1px solid red;
+    display:flex;
+}
+.flogo{
+    border:1px solid blue;
+    margin-right:26px;
+}
+.info{
+    border:1px solid blue;
+}
+
+.info>ul{
+    margin-bottom:8px;
+    display: flex;
+}
+.info>ul>li{
+    border:1px solid red;
+    padding:0 10px;
+}
+.info>ul>li:first-of-type{padding-left:0;}
+
+.info>dl{
+    border:1px solid blue;
+}
+.info>dl *{
+    border:1px solid red;
+    display: inline;
+}
+footer{
+    margin-top:36px;
+    padding:22px 0;
+}

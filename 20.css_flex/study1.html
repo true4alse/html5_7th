@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>flex</h1>
+    <p>블록레벨태그들을 나란히 배치하는데 사용하는 레이아웃</p>
+    <h2>구조</h2>
+    <p>상하관계가 뚜렷 -> 대장(flex-container),쫄병(flex-item)</p>
+
+    <h3>flex-container(대장)에 지정하는 속성 들</h3>
+    <ul>
+        <li>
+            <h2>display:flex</h2>
+            <p>선택한 태그를 flex-container로 지정한다.</p>
+            <p>flex-container는 (좌에서 우 방향-row)으로 메인축이 형성되고, 그에 수직방향(위에서 아래로-column)으로 교차축이 형성된다.</p>
+            <p>flex-container의 자식태그들은 flex-item으로 분류되어 기본적으로 메인축을 따라서 나란히 정렬하는 특징을 갖게된다.</p>
+        </li>
+        <li>
+            <h2>flex-direction</h2>
+            <p>메인축의 방향을 바꾸어 주는 속성</p>
+            <ul>
+                <li>row(기본값) - 좌->우</li>
+                <li>row-reverse - 우->좌</li>
+                <li>column - 위->아래</li>
+                <li>column-reverse - 아래->위</li>
+            </ul>
+            <p>point)플렉스아이템들은 무조건 메인축을 따라서 나란히 배치된다.</p>
+            <p>flex-start/center/flex-end 지점으로 방향성을 표시한다.</p>
+        </li>
+        <li>
+            <h2>justify-content</h2>
+            <p>메인축을 따라 아이템을 정렬할 때 사용</p>
+            <ul>
+                <li>flex-start(기본값) - 메인축 시작지점에 아이템 정렬</li>
+                <li>flex-end - 메인축 마지막지점에 아이템 정렬</li>
+                <li>center - 메인축 중앙지점에 아이템 정렬</li>
+                <li>space-between - 메인축 시작과 마지막지점에 아이템을 맞춘 후 아이템의 사이 여백을 동일하게 지정하도록 정렬</li>
+                <li>space-around - 각 아이템들의 좌우 여백을 동일하게 지정하여 정렬</li>
+            </ul>
+        </li>
+        <li>
+            <h2>align-items</h2>
+            <p>교차축을 기준으로 아이템을 정렬하는 속성</p>
+            <p>기본값(stretch) 컨테이너의 교차축길이만큼 아이템을 늘림</p>
+            <p>교차축의 방향을 설정하는 css속성 없음</p>
+            <p>교차축은 메인축의 방향에 따라 결정되며 언제나 왼쪽에서 오른쪽 / 위에서 아래 두가지경우 밖에 없음</p>
+        </li>
+        <li>
+            <h2>flex-wrap</h2>
+            <p>flex-item들의 줄바꿈을 설정하는 속성</p>
+            <p>
+                기본값(nowrap)줄바꿈을 허용하지 않음<br>
+                이 때는, 아이템들의 크기가 유동적임.<br>
+                박스사이즈가 자동계산
+            </p>
+            <p>wrap(줄바꿈을 허용)</p>
+        </li>
+        <li>
+            <h2>align-content</h2>
+            <p>flex-container에서 아이템들의 줄바꿈을 허용했을 때 container전체 높이를 수직축으로하여 아이템 그룹 전체를 정렬할 때 사용하는 속성</p>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>flex-item 전용 속성들</h3>
+    <p>아이템들은 포함하는 컨텐츠 만큼의 너비를 갖는다</p>
+    <ul>
+        <li>
+            <h2>flex-basis</h2>
+            <p>아이템들이 점유하는 기본크기 (auto:기본값)/width처럼 사용할 수 있다</p>
+        </li>
+        <li>
+            <h2>flex-shrink</h2>
+            <p>아이템의 크기가 줄어드는 비율</p>
+            <p>플렉스 컨테이너의 너비가 줄어들어서 아이템들에게 설정된 너비도다 작아져야할 때,줄어드는 비율(기본값:1)(아이템들이 줄바꿈이 허용이 안되는 상황에서 기본값1)</p>
+        </li>
+        <li>
+            <h2>flex-grow</h2>
+            <p>플렉스 컨테이너의 공간이 여유가 있어서 남았을 때, 남은 공간을 아이템들이 나눠갖는비율(아이템은 커짐)</p>
+        </li>
+        <li>
+            <h2>order</h2>
+            <p>아이템의 순서를 바꿀 때 사용</p>
+            <p>order낮을 수록 축의 start지점에 정렬</p>
+        </li>
+        <li>
+            <h2>align-self</h2>
+            <p>아이템의 수직축 정렬</p>
+        </li>
+    </ul>
+
+
+    <div class="box">
+        <section>섹션1<br>섹션111</section>
+        <section class="a">섹션2</section>
+        <section>섹션3</section>
+        <section>섹션4</section>
+        
+    </div>
+
+
+</body>
+</html>

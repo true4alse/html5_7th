@@ -1,0 +1,57 @@
+/* layout */
+img{max-width:100%;}
+
+.container{
+    border:5px solid #000;
+    width:1200px;
+    margin:0 auto;
+}
+.index_frame{
+    border:10px solid red;
+    float:left;
+    width:300px;
+}
+.table_frame{
+    border:10px solid blue;
+    width:500px;
+    float:right;
+}
+.def_frame{
+    border:10px solid green;
+    clear:both;
+}
+.def_frame dt{
+    border-bottom:4px solid gold;
+}
+.def_frame dt:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.def_frame dt a:last-of-type{
+    border:1px solid red;
+    float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

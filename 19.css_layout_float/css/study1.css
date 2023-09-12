@@ -1,0 +1,40 @@
+*{margin:0;padding:0;}
+.parent{
+    border:10px solid black;
+    width:700px;
+    
+    margin:0 auto;
+    background:pink;
+}
+.a{
+    background:red;
+    width:200px;
+    height:300px;
+    float:right;
+}
+.b{
+    background:blue;
+    width:200px;
+    height:500px;
+    float:right;
+}
+.c{
+    background:green;
+    width:200px;
+    height:400px;
+    float:left;
+}
+.nextP{
+    border:10px solid blue;
+}
+.clearbox{
+    background:lime;
+    clear:both;
+}
+.parent:after{
+    content:"";
+    display: block;
+    clear:both;
+    height:30px;
+    background:lime;
+}

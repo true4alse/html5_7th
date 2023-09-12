@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    border:1px solid red;
+    list-style:none;
+}
+li{
+    border:1px solid blue;
+}
+.list{
+    width:800px;
+    margin:0 auto;
+    display:flex;
+}   
+.list>li{
+    font-size:2rem;
+    flex:1;
+    transition:all 0.5s ease 0s;
+    /* 
+        flex-basis:0%;
+        flex-grow:1;
+        flex-shrink:1;
+    */
+}
+.list>li:hover{
+    flex:2;
+}
+.list:after{
+    content:"";display:block;clear:both;
+}

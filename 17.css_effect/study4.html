@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        img{
+            /* filter:grayscale(0%); */
+            /* filter:brightness(20%); */
+            /* filter:blur(20px); */
+            filter:hue-rotate(180deg);
+            /* filter:
+            brightness(0.2)
+            hue-rotate(180deg); */
+        }
+        img:hover{
+            /* filter:grayscale(0); */
+            /* filter:brightness(1); */
+            /* filter:blur(0px); */
+            /* filter:hue-rotate(0deg); */
+            filter:brightness(1)hue-rotate(0deg);
+        }
+        figure{
+            padding:40px;
+            background:darkorange;
+            display: inline-block;
+
+        }
+        figcaption{
+            padding:10px;
+            background:lightpink;
+        }
+        /* body{
+            background:darkolivegreen;
+            filter:hue-rotate(30deg);
+        } */
+    </style>
+</head>
+<body>
+    <h1>filter</h1>
+    <figure>
+        <figcaption>coffee</figcaption>
+        <img src="./img/coffee.jpg" alt="커피 사진">
+    </figure>
+    
+</body>
+</html>
