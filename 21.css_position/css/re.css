@@ -1,0 +1,28 @@
+*{
+    margin:0;padding:0;
+    
+}
+body{
+    /* border:3px solid green; */
+}
+.box{
+    border:1px solid red;
+    width:1200px;
+    height:300px;
+    position:relative;
+}
+.box>div{
+    border:1px solid blue;
+    position:absolute;
+    width:200px;
+    height:100%;
+    background:blue;
+    color:#fff;
+    font-size:4rem;
+}
+.a{left:0px;top:0px;}
+.b{left:200px;top:0px;}
+.c{right:0px;top:0px;}
+p{
+    border:1px solid #000;
+}

@@ -1,0 +1,51 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+ul,ol{list-style:none;}
+img{max-width:100%;}
+
+html{
+    font-size:14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pcgames{
+    
+    width:300px;
+    padding:10px;
+    box-sizing: border-box;
+}
+.pcgames h3{
+    margin-bottom:23px;
+    
+}
+.pcgames>ul{
+    
+}
+.pcgames>ul>li{
+    
+    margin-bottom:15px;
+    background:#F8FAFC;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.pcgames>ul>li:last-of-type{
+    margin-bottom: 0;
+}
+.pcgames>ul>li>a{
+    display:flex;
+}
+.pcgames>ul>li>a>img{
+    width:50%;
+}
+.txt{
+    padding-left:22px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.txt p{
+    font-size:0.9rem;
+    color:#929292;
+}
+
+

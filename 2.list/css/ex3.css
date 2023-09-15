@@ -1,0 +1,25 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;color:inherit;}
+img{max-width: 100%;}
+
+.newsList{
+    width:1080px;
+    margin:0 auto;
+    border:1px solid red;
+    display: flex;
+}
+.newsList>li{
+    border:1px solid blue;
+    /* flex:1; */
+    flex-basis:0%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-right:16px;
+}
+.newsList>li:last-of-type{
+    margin-right:0;
+}
+.newsList>li p{
+    margin:14px 0;
+}

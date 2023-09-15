@@ -1,0 +1,76 @@
+*{
+    margin:0;padding:0;
+}
+ul,ol{list-style: none;}
+
+.tabMenu1{
+    border:1px solid red;
+    width:400px;
+    height:200px;
+    position:relative;
+}
+.tabMenu1>dt{
+    border:1px solid blue;
+    width:100px;
+    height:50px;
+    float:left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tabMenu1>dt.on{
+    background:#000;
+    color:#fff;
+}
+.tabMenu1>dd{
+    border:1px solid green;
+    /* background:pink; */
+    position:absolute;
+    left:0;
+    top:50px;
+    width:100%;
+    display: none;
+    transition:all 0.6s ease 0s;
+}
+.tabMenu1>dt.on+dd{
+    display:block;
+}
+
+.tabMenu2{
+    border:1px solid red;
+    width:400px;
+    height:200px;
+    position:relative;
+}
+.tabMenu2>dt{
+    border:1px solid blue;
+    width:200px;
+    height:50px;
+    margin-left:auto;;
+    display:flex;
+    align-items: center;
+    padding-left:20px;
+    box-sizing: border-box;
+}
+.tabMenu2>dt.active{
+    background:#000;
+    color:#fff;
+}
+.tabMenu2>dd{
+    border:1px solid green;
+    width:200px;
+    height:100%;
+    position:absolute;
+    left:0;top:0;
+    box-sizing: border-box;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition:all .7s ease 0s;
+}
+.tabMenu2>dt.active+dd{
+    opacity: 1;
+    pointer-events: auto;
+}
