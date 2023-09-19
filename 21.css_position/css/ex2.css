@@ -45,6 +45,7 @@ main{
 }
 /* 2depth ul */
 .gnb>li>ul{
+    border:1px solid lime;
     background:slateblue;
     position:absolute;
     left:270px;

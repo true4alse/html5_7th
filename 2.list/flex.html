@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{margin:0;padding:0;}
+        .box{
+            border:1px solid blue;
+            display:flex;
+            flex-wrap:wrap;
+            width:400px;
+            margin:0 auto;
+        }
+        .box>div{
+            border:1px solid red;
+            width:200px;
+            flex-shrink: 1;
+        }
+        .box>div:nth-of-type(2){
+            flex-shrink: 3;
+        }
+        .bg{
+            border:1px solid red;
+            width:200px;
+            height:200px;
+            background:url("./img/spSearch.png") no-repeat -140px 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="box">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <div>div4</div>
+    </div>
+</body>
+</html>
