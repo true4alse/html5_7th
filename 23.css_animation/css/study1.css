@@ -1,0 +1,64 @@
+body{margin-bottom:500px;}
+@keyframes warigari {
+    0%{
+        transform:translateX(0%)
+    }
+    50%{
+        transform:translateX(100%);
+        border-radius: 50%;
+        background:red;
+    }
+    100%{
+        transform:translateX(0%)
+    }
+}
+
+@keyframes orinari {
+    0%{transform:translateY(0%)}
+    100%{transform:translateY(-100%)}
+}
+
+.orinari{
+    /* animation-name:orinari;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+    animation-direction:normal;
+    animation-fill-mode: forwards; */
+    animation:orinari 2000ms linear 0s 3 normal forwards;
+}
+
+.warigari{
+    /* animation-name: warigari;
+    animation-duration:1s;
+    animation-timing-function: linear;
+    animation-delay:0s;
+    animation-iteration-count: infinite; */
+    animation:warigari 1s linear 0s infinite;
+}
+.box{
+    border:1px solid black;
+    width:200px;height:200px;
+    margin:50px auto;
+}
+.box2{
+    background:blue;
+    width:150px;
+    height:150px;
+    margin:50px auto;
+}
+@keyframes run {
+    0%{transform:translate(0)}
+    25%{transform:translate(100%,0)}
+    50%{transform:translate(100%,100%)}
+    75%{transform:translate(0,100%)}
+    100%{transform:translate(0)}
+}
+.run{
+    animation:run 2s linear 0s infinite;
+    color:red;
+    color:blue;
+}
+
+
