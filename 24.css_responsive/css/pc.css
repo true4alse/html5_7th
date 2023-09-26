@@ -1,0 +1,17 @@
+@media (min-width:1025px){
+    /* 화면너비가 최소 1025픽셀 이상인 경우 적용될 스타일 */
+    .box{
+        background:green;
+    }
+    .list{
+        border:1px solid blue;
+        width:1200px;
+        margin:0 auto;
+        height:500px;
+        display:flex;
+    }
+    .list>li{
+        border:1px solid black;
+        flex:1;
+    }
+}

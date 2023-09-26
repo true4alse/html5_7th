@@ -1,0 +1,17 @@
+*{
+    margin:0;padding:0;
+}
+ul{list-style: none;}
+
+.box{
+    border:1px solid red;
+    height:400px;
+    transition:all 1s ease 0s;
+}
+
+
+
+
+
+
+
