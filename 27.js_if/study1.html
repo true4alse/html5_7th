@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문</title>
+</head>
+<body>
+    <h1>조건문</h1>
+    <p>조건에 따라 실행되는 구문</p>
+    <p>기본형태 ->  if(조건boolean){실행되는 소스코드}</p>
+    <p>괄호안의 조건의 결과가 참인경우 중괄호안의 소스코드가 실행된다. 조건의 결과가 거짓인경우는 중괄호안에 못들어간다.</p>
+
+    <h2>if(조건){소스코드1}else{소스코드2}</h2>
+    <p>조건이 참이라면 소스코드1을 실행하고 그렇지않다면 소스코드2를 실행한다</p>
+    <p>else구문은 선택적으로 사용하는 것이며, 앞에서 제시한 경우의 정반대 경우를 의미한다(그렇지않다면 으로 해석)</p>
+
+    <h2>if(조건1){소스코드1}else if(조건2){소스코드2}...</h2>
+    <p>만약 조건1이 참이라면 소스코드1을 실행하고 그 이후의 조건은 해석하지 않는다.</p>
+    <p>위에서 아래로 조건을 비교하면서 내려올 때 한번이라도 조건이 참이면 다음부터는 해석하지 않는다.</p>
+    <script>
+        if(false){
+            console.log("참")
+        }
+        if(!0){
+            console.log("참1")
+        }
+        // let userAge = Number(prompt("나이를 입력해주세요"))
+        // if(userAge>=20){
+        //     alert("환영합니다")
+        // }else{
+        //     // userAge < 20 경우
+        //     alert("20살 미만은 안돼요..")
+        // }
+
+        let money = 2000
+        if(money >= 10000){
+            alert("돈이 많군요")
+        }else if(money >= 5000){
+            alert("돈이 쫌 있군요")
+        }else if(money >= 3000){
+            alert("돈이 부족하군요")
+        }else{
+            alert("저축을 하세요!")
+        }
+
+    </script>
+</body>
+</html>

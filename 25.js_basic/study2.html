@@ -16,7 +16,7 @@
         // alert(5*20)
         // alert(100/2)
         // alert((5+20)*3-2)
-        // alert(132312433%3)
+        // alert(36%3)
         // 어떤 미지수를 3으로 나누었을 때 결과적으로 0,1,2 중 한가지가 나오듯 경우의 수를 뽑을 때 주로 사용
     </script>
     <h2>문자데이터 - String</h2>
@@ -25,16 +25,22 @@
     <p>문자데이터는 덧셈을 통해서 서로 이어줄 수 있다</p>
     <p>문자데이터와 숫자데이터를 더하면 서로 이어지면서 문자데이터로 된다</p>
     <script>
-        // alert('"안녕"')
-        // alert("he's a doctor")
-        // alert(`he's a doctor "hello" `)
-        // alert("안   "+'녕'+"하"+"세요")
-        // alert("100"+100+2)
+        // "안"+"녕"+"하"+3
+        // "안녕"+"하"
+        // "안녕하3"
+        console.log('"안녕"')
+        console.log("he's a doctor")
+        // "he";"is";
+        console.log(`he's a doctor "hello" `)
+        console.log("안   "+'녕'+"하"+"세요")
+        console.log("100"+100+2)
         console.log("100")
         document.write("<h2 class='a'>하하하 나다!</h2>")
-        document.write("<h2 class='"+"b"+"'>하하하 나다!</h2>")
+        document.write("<h2 class='b'>하하하 나다!</h2>")
         // "1001002"
     </script>
+    <h2 class='a'>하하하 나다!</h2>
+    <h2 class='b'>하하하 나다!</h2>
     <h2 class='c'>하하하 나다!</h2>
 </body>
 </html>

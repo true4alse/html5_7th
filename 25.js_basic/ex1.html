@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>예제</title>
+    <style>
+        .grade{border-collapse: collapse;font-size:3rem;width:500px;}
+        .grade caption{background:#000;color:#fff;padding:5px;}
+        .grade th{border:1px solid black;padding:5px;}
+        .grade td{border:1px solid black;padding:5px;}
+    </style>
 </head>
 <body>
     <script>
@@ -21,7 +27,39 @@
         let scoreEn = Number(prompt("영어점수 말해라"))
         let scoreMa = Number(prompt("수학점수 말해라"))
         let scoreAver = (scoreKo+scoreEn+scoreMa)/3
-        alert("["+userName+"님의 평균점수는 "+scoreAver+"점입니다]")
+        // // alert("["+userName+"님의 평균점수는 "+scoreAver+"점입니다]")
+        // // alert("["+userName+"님의 평균점수는 "+scoreAver+"점입니다]")
+        // document.write(`[${userName}님의 평균점수는 ${scoreAver}점입니다]`)
+
+        document.write(`
+            <table class="grade">
+            <caption>${userName}님의 성적표</caption>
+            <tr>
+                <th>국어</th>
+                <td>${scoreKo}점</td>
+            </tr>
+            <tr>
+                <th>영어</th>
+                <td>${scoreEn}점</td>
+            </tr>
+            <tr>
+                <th>수학</th>
+                <td>${scoreMa}점</td>
+            </tr>
+            <tr>
+                <th>합계</th>
+                <td>${scoreKo+scoreEn+scoreMa}점</td>
+            </tr>
+            <tr>
+                <th>평균</th>
+                <td>${scoreAver}점</td>
+            </tr>
+        </table>
+        `)
+        
+
+
     </script>
+    
 </body>
 </html>

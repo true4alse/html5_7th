@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참거짓데이터 - boolean</title>
+</head>
+<body>
+    <h1>boolean데이터</h1>
+    <p>값이 두개밖에없다. 참/거짓</p>
+    <p>true / false</p>
+
+    <h2>비교를 통하여 참거짓이 도출된다</h2>
+    <p>부등식의 비교를 통하여 참거짓 결과를 계산한다</p>
+    <p>!는 부정의 의미(not)</p>
+    <p>=== 데이터형태까지 엄격한 비교를 한다</p>
+    <script>
+    // alert(false) // true
+    // alert(true) // true
+    // alert(6<=6) // true
+    // alert(5!=5) // false
+    // alert(10!==10) // true
+    // alert(10==="10") // false
+    </script>
+
+    <h2>사실의 근거에 대한 참거짓 도출된다</h2>
+    <p>무언가가 있다면 true / 없다면 false</p>
+
+    <h3>false로 간주되는 경우</h3>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 빈문자인경우</li>
+        <li>변수는 선언한 후 초기화를 하지않은 변수</li>
+    </ul>
+    <script>
+        // alert(!0)
+        // alert(!!!"")
+        // let a
+        // // alert(a)
+        // !0
+        // !""
+        // !a
+    </script>
+
+    <h1>삼항연산자</h1>
+    <p>조건?조건이 참일때 남겨지는 값:조건이 거짓일때 남겨지는 값</p>
+    <script>
+        // let friends =0;
+        // console.log(friends?"참":"거짓"?"참1":"거짓1")
+        
+        // alert(false?"참이군":"거짓이군")
+        // 사용자에게 나이를 물어보고
+        // 나이가 20살 이상이면 입장을 환영합니다! 라는 메시지가 나오고
+        // 나이가 20살 미만이면 입장이 불가능합니다! 라는 메시지가 나오도록 코드작성
+        // let userAge = Number(prompt("나이가 어떻게 되세요?"))
+        // userAge?alert("감사"):alert("나이입력하라구여!")
+        // alert(userAge>=20?"입장을 환영합니다":"입장이 불가능합니다!")
+        
+        let a = 10
+        let b = 3
+        a>10?b=4:b<10?a=5:b=2
+
+        alert(a)
+        alert(b)
+        // a와 b의 값은?
+    </script>
+</body>
+</html>

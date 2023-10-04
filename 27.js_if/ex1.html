@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+</head>
+<body>
+    <p>사용자에게 아이디와 비밀번호를 물어보고 정상적으로 입력했다면, 알림창으로 "로그인되었습니다" 그렇지않다면 알림창으로 "계정정보가 올바르지 않습니다" 라는 메시지가 나타날 수 있도록 소스코드를 작성해보세요</p>
+    <p>아이디 : green / 비밀번호 : 1234</p>
+    <script>
+        // let userId = prompt("아이디를 입력")
+        // let userPw = prompt("비번을 입력")
+        // if(userId == "green" && userPw == "1234"){
+        //     alert("로그인되었습니다.")
+        // }else{
+        //     alert("계정정보가 올바르지 않습니다.")
+        // }
+
+        let userId = prompt("아이디를 입력")
+        if(userId =="green"){
+            let userPw = prompt("비번을 입력")
+            if(userPw == "1234"){
+                // 아이디와 비번이 둘다 맞은경우
+                alert("로그인되었습니다.")
+            }else{
+                // 아이디는 맞았지만 비번이 틀린경우
+                alert("비밀번호가 틀렸습니다.")
+            }
+        }else{
+            // 아이디가 틀린 경우
+            alert("아이디가 틀렸습니다.")
+        }
+
+
+    </script>
+
+</body>
+</html>
