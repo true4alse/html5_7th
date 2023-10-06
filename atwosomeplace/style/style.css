@@ -380,7 +380,131 @@ footer{
     /* border:1px solid red; */
     margin-left:16px;
 }
+/* hiddenGnb */
+.hiddenGnb{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:#222;
+    z-index:2000;
+    color:#fff;
+    display:flex;
+    transform:translateX(100%);
+    opacity: 0;
+    transition:all 0.6s ease 0s;
+}
+.hiddenGnb.on{
+    opacity: 1;
+    transform:translateX(0%);
+}
 
+.hiddenGnb>*{
+    
+    flex:1;
+}
+.hiddenGnb>h1{
+    align-self: flex-start;
+    margin-top:20px;
+    text-align: center;
+}
+.hiddenGnb>nav{
+    flex:4;
+    
+    display:flex;
+    align-items: center;
+}
+.hid_gnb{
+    width:100%;
+    position:relative;
+}
+.hid_gnb>li{
+    
+    width:50%;
+    font-size:48px;
+    font-weight: bold;
+    margin-bottom:30px;
+    
+}
+.hid_gnb>li>a{
+    
+    display: block;
+    transform:translateX(70%);
+    opacity: 0;
+}
+.hid_gnb>li:nth-of-type(1)>a{transition:all 0.6s ease 0.6s;}
+.hid_gnb>li:nth-of-type(2)>a{transition:all 0.6s ease 0.7s;}
+.hid_gnb>li:nth-of-type(3)>a{transition:all 0.6s ease 0.8s;}
+.hid_gnb>li:nth-of-type(4)>a{transition:all 0.6s ease 0.9s;}
+.hid_gnb>li:nth-of-type(5)>a{transition:all 0.6s ease 1.0s;}
+.hid_gnb>li:nth-of-type(6)>a{transition:all 0.6s ease 1.1s;}
+
+
+.hiddenGnb.on .hid_gnb>li>a{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+.hid_gnb>li:last-of-type{margin-bottom:0;}
+.hid_gnb>li>ul{
+    
+    position:absolute;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+    font-size:0.6em;
+    /* font-weight:normal; */
+    transition:all 0.3s ease 0s;
+    opacity:0;
+    pointer-events: none;
+}
+.hid_gnb>li:hover>ul{
+    opacity:1;
+    pointer-events: auto;
+}
+.hid_gnb>li>ul>li{
+    
+    margin-bottom:30px;
+}
+.hid_gnb>li>ul>li:last-of-type{margin-bottom:0;}
+.hid_gnb>li>ul>li>ul{
+    font-weight: normal;
+    font-size:0.8em;
+    padding:20px 0;
+}
+.hid_gnb>li>ul>li>ul>li{
+    margin-bottom:20px;
+}
+.hid_gnb>li>ul>li>ul>li:last-of-type{margin-bottom:0;}
+.hiddenGnb>section{
+    align-self: flex-end;
+    opacity:0.8;
+    padding-bottom:70px;
+}
+.hiddenFootMenu{
+    
+    text-align: right;
+    padding-right: 40px;
+}
+.hiddenFootMenu>li{
+    margin-bottom:20px;
+}
+.hiddenFootMenu>li:last-of-type{margin-bottom:0;}
+.hiddenFootSns{
+    
+    padding-right: 40px;
+    display:flex;
+    justify-content: flex-end;
+    margin-top:40px;
+}
+.hiddenFootSns>li{
+    
+    margin-left:14px;
+}
+.hiddenFootSns>li:first-of-type{margin-left:0;}
 
 
 

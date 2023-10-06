@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while 반복문</title>
+</head>
+<body>
+    <h1>while반복문</h1>
+    <p>조건이 참인동안 소스코드를 반복하는 문법구조</p>
+    <p>기본형태 while(조건){반복할 소스코드}</p>
+    <p>반복문에서는 의도한 횟수만큼 반복하기위한 구성요소 3가지가 있다</p>
+    <ul>
+        <li>반복의 조건</li>
+        <li>반복조건에 사용될 변수</li>
+        <li>변수의 증감식</li>
+    </ul>
+
+    <script>
+        let num = 0
+        while(num<3){
+            console.log("하하하^^"+num)
+            num++
+        }
+        document.write("<ul>")
+        let num2 = 5000
+        while(num2){
+            num2--
+            document.write("<li>"+"히히히^^"+num2+"</li>")
+        }
+        document.write("</ul>")
+    </script>
+
+    
+</body>
+</html>

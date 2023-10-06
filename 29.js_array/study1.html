@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 - array</title>
+</head>
+<body>
+    <h1>배열 - array</h1>
+    <p>연관된 데이터들을 모아놓은 집합</p>
+    <p>배열 안에는 콤마로 구분하여 원소를 여러개 입력할 수 있다</p>
+    <p>배열은 입력된 순서에 따라 원소들에게 순번이 매겨진다</p>
+    <p>배열은 배열안의 원소를 선택할 때 인덱스박스[]를 통해 원하는 원소를 선택할 수 있다</p>
+
+    <script>
+        let friends = ["상수","시홍","현종"]
+        console.log(friends[0])
+        console.log(friends[1])
+        console.log(friends[2])
+        console.log(friends.length)
+
+        // 이름 국어 영어 수학 사회 과학
+        let score = ["정현진",90,60,70,20,95]
+        console.log(score[0])
+        console.log(score[4])
+
+        let person = [
+            "김영환",
+            30,
+            "남자",
+            true,
+            ["축구구경하기","노래하기","게임하기"]
+        ]
+        console.log(person[3])
+        if(!person[3]){
+            console.log("미혼입니다")
+        }else{
+            console.log("기혼입니다")
+        }
+        console.log(person[4][2])
+        // [1,2,3][2]
+
+        //국어,영어,수학,사회,과학
+        let score2 = [10,20,30,40,50]
+        let score2sum = 0
+        for(let i=0 ; i<score2.length ; i++){
+            score2sum += score2[i]
+        }
+        let score2aver = (score2sum)/score2.length
+        console.log(score2aver)
+
+    </script>
+</body>
+</html>

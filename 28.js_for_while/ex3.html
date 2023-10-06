@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문중첩예제 구구단</title>
+</head>
+<body>
+    <h2>구구단2~9단</h2>
+    <!-- 자바스크립트를 사용하여 구구단을 2단부터 9단까지 li태그로 출력해보세요 -->
+    <!-- <ul>
+        <li style="background:rgb(32,42,55)">2x1=2</li>
+        <li style="background:rgb(212,142,55)">2x2=4</li>
+        <li style="background:rgb(32,2,255)">2x3=6</li>
+        <li style="background:rgb(232,42,35)">2x4=8</li>
+        <li>2x5=10</li>
+        <li>2x6=12</li>
+        <li>2x7=14</li>
+        <li>2x8=16</li>
+        <li>2x9=18</li>
+    </ul>
+    <ul>
+        <li>3x1=2</li>
+        <li>3x2=6</li>
+        <li>3x3=9</li>
+        <li>3x4=12</li>
+        <li>3x5=15</li>
+        <li>3x6=18</li>
+        <li>3x7=21</li>
+        <li>3x8=24</li>
+        <li>3x9=27</li>
+    </ul> -->
+
+    <script>
+        for(let dan=2 ; dan<=9 ; dan++){
+            document.write("<ul>")
+            for(let n=1 ; n<=9 ; n++){
+                let red = Math.round(Math.random()*255) // 123
+                let green = Math.round(Math.random()*255) // 42
+                let blue = Math.round(Math.random()*255) // 221
+                document.write(`<li style="background:rgb(${red},${green},${blue})">${dan}x${n}=${dan*n}</li>`)
+            }
+            document.write("</ul>")
+        }
+    </script>
+    
+</body>
+</html>
