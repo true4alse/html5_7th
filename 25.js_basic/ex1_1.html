@@ -12,16 +12,11 @@
     </style>
 </head>
 <body>
-    <script>
-        // let userName = prompt("당신의 이름을 말해주세요")
-        // let userAge = prompt(userName+"님의 나이는 몇 살인가요??")
-        // alert(userAge+"세 "+userName+"님 환영합니다.")
-
-    </script>
     <h1>성적표 예제</h1>
     <p>퀴즈) 사용자에게 이름과 국어, 영어, 수학점수를 물어보고 평균점수를 구해서 알림창에 나타내보시오.</p>
     <p>답안예시 [정현진님의 평균점수는 90점입니다]</p>
     <script>
+        function writeTableOfScore(){
         let userName = prompt("이름을 말해라")
         let scoreKo = Number(prompt("국어점수 말해라"))
         let scoreEn = Number(prompt("영어점수 말해라"))
@@ -52,6 +47,9 @@
             </tr>
         </table>
         `)
+        }
+        writeTableOfScore()
+       
         
 
 

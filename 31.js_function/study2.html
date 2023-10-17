@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수2</title>
+</head>
+<body>
+    <h1>함수 더 알아보기</h1>
+    <script>
+        // 각 과목의 점수를 재료로 평균점수를 계산해서 리턴
+        function getAver(ko,en,ma,sc){
+            return (ko+en+ma+sc)/4
+        }
+        // let getAver = function(ko,en,ma,sc){
+        //     return (ko+en+ma+sc)/4
+        // }
+        // alert(getAver(100,90,80,70))
+        
+
+        function getAver2(score){
+            return (score[0]+score[1]+score[2])/score.length
+        }
+        // let getAver2 = function(score){
+        //     return (score[0]+score[1]+score[2])/score.length
+        // }
+        getAver2([100,90,80])
+
+        function getAver3(score){
+            let sum = 0;
+            for(let i=0 ; i<score.length ; i++){
+                sum += score[i]
+            }
+            let aver = sum/score.length
+            return aver
+        }
+        // let getAver3 = function(score){
+        //     let sum = 0;
+        //     for(let i=0 ; i<score.length ; i++){
+        //         sum += score[i]
+        //     }
+        //     let aver = sum/score.length
+        //     return aver
+        // }
+        // alert(getNumber10(getAver3([100,90,85]),2))
+        function getNumber10(num,sosu){
+            return (Math.round(num*(Math.pow(10,sosu))))/Math.pow(10,sosu)
+        }
+
+        // let getNumber10 = function(num,sosu){
+        //     return (Math.round(num*(Math.pow(10,sosu))))/Math.pow(10,sosu)
+        // }
+
+        // Math.pow(2,3) // 2의 3승
+        // alert(getNumber10(82.3333333,2)) // 82.3
+
+        function introduce(personObj){
+            document.write(`<div>
+            <h2>${personObj.name}</h2>
+            <p>${personObj.age}살</p>
+            <p>${personObj.job}</p>
+            <p>${personObj.char}</p>
+            </div>`)
+            return [personObj.name,personObj.age,personObj.job]
+        }
+        let a = introduce({
+            name:"정현진",
+            age:38,
+            job:"강사",
+            char:"셈이 느리고 이해력이 낮다"
+        })[3]
+
+        console.log(a)
+        introduce({name:"김영환",age:30,job:"학생",char:"착하고 예의바르다"})[2]
+        
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습!</title>
+</head>
+<body>
+    <h2 class="tit">title</h2>
+    <ul class="notice">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ul>
+    <script>
+        // tit클래스태그를 선택하여 내용을 <i>제목</i>으로 바꾸고 글씨색을 파란색 글씨크기를 30픽셀로 수정
+        // li태그들을 선택하여 배경색을 오렌지색으로 변경하고 글씨색은 빨간색으로 변경
+        let tit = document.querySelector(".tit")
+        tit.innerHTML = `<i>제목</i>`
+        tit.style.color = "blue"
+        tit.style.fontSize = "30px"
+
+        let listArray = document.querySelectorAll(".notice>li")
+        for(let i=0 ; i<listArray.length ; i++){
+            listArray[i].style.background = "orange"
+            listArray[i].style.color = "red"
+        }
+
+        
+    </script>
+</body>
+</html>

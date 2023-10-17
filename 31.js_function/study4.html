@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 응용</title>
+</head>
+<body>
+    <h1>함수의 응용</h1>
+    <h2>콜백함수</h2>
+    <p>어떠한 함수를 부르면(call)하면 바로뒤에 같이 실행되는 함수</p>
+    <p>전제 : 변수에는 string,number,boolean,array,object,function이 저장될 수 있다.</p>
+    <script>
+        function a(b){
+            alert("a함수가 실행됩니다.")
+            b()
+        }
+        a(function(){
+            alert("콜백함수가 실행되었습니다.")
+        })
+
+        function c(a,b){
+            alert("c함수가 실행됩니다.")
+            a()
+            b()
+        }
+        c(function(){alert("하하")},function(){alert("히히")})
+    </script>
+    <h2>객체에서의 메서드표현</h2>
+    <p>객체는 자바스크립트에서 사물을 표현할 때 사용하는 데이터형태</p>
+    <p>객체는 사물의 특징을 ,콤마로 구분하여 프로퍼티형태로 설명한다.</p>
+    <script>
+        let person = {
+            name:"이혜리",
+            gender:"여자",
+            hobby:["요리하기","조리하기"],
+            friend:{
+                bestfriend:["피치","릴리","데이지"],
+                alumni:["둘리","도우너","또치","가시고기"],
+                sayFriend:function(){
+                    alert("내친구들! 하하")
+                }
+            },
+            marry:false,
+            sayHello:function(){
+                alert("안녕하세요!")
+            },
+            sayGoodbye:function(){
+                alert("안녕히계세요!")
+            }
+        }
+        person.friend.sayFriend()
+        person.name // 이혜리
+        person.gender // 여자
+        person.sayHello()
+        person.sayGoodbye()
+        console.log()
+        Math.random()
+        document.write("하하하")
+        window.alert("하하하하")
+    </script>
+</body>
+</html>

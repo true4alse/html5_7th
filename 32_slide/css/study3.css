@@ -1,0 +1,44 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+a{color:inherit;text-decoration: none;}
+img{max-width: 100%;}
+
+/* 가로형 슬라이드 */
+.station{
+    width:100%;
+    height:740px;
+    border:1px solid red;
+    margin:0 auto;
+    /* overflow: hidden; */
+}
+.train{
+    width:700%;
+    height:100%;
+    display:flex;
+    transition: all 1s ease 0s;
+}
+.train>li{
+    width:calc(100%/7);
+    height:100%;
+    border:5px solid blue;
+    position:relative;
+}
+.train>li>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.flotingBox{
+    border:1px solid #fff;
+    position: absolute;
+    /* left:50px;
+    bottom:50px; */
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    background:rgba(0,0,0,0.4);
+    color:#fff;
+    padding:50px;
+    backdrop-filter:blur(3px);
+}

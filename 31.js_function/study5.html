@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자함수</title>
+</head>
+<body>
+    <h1>지역변수와 전역변수</h1>
+    <p>변수는 크게 지역변수와 전역변수로 나뉜다.</p>
+    <p>지역변수는 특정공간안에서 만들어진 변수이다. 지역변수는 해당되는 특정공간안에서만 접근이 가능하다</p>
+    <p>전역변수는 전체공간안에서 만들어진 변수이다. 그래서 모든 특정공간 안쪽에서도 접근이 가능하다</p>
+    <p>변수는 안에서 밖으로는 접근이 되지만 밖에서 안으로는 접근이 안된다</p>
+    <script>
+        let a = 100
+        function box(){
+            let a = 0
+            a = 200
+            // a라는 변수를 새로 만든것이 아니기 때문에 바깥쪽에 a라는 전역변수 공간을 불러오고 있다.
+        }
+        box()
+        alert(a)
+
+        // function box2(){
+        //     let c = 20
+        //     // c라는 변수를 box2함수공간안에 새롭게 만들었다. 이 변수는 box2함수 바깥쪽에서는 접근할 수 없다.
+        // }
+        // box2()
+        // alert(c)
+
+        let person = {
+            name:"정현진",
+            age:38
+        }
+        // alert(name)
+
+        for(let i=0 ; i<4 ; i++){
+            console.log(i)
+        }
+        // console.log(i) 반복문 바깥쪽에서 안으로 접근이 불가능하다 지역변수이기때문에
+
+    </script>
+
+
+    <h1>생성자함수</h1>
+    <p>객체를 생성하여 리턴하는 함수</p>
+    <script>
+        // let person1 = {
+        //     name:"정현진",
+        //     age:38,
+        //     sayHello:function(){alert("안녕하세요! "+person1.name+"입니다.")}
+        // }
+        // let person2 = {
+        //     name:"강민재",
+        //     age:22,
+        //     sayHello:function(){alert("안녕하세요! "+person2.name+"입니다.")}
+        // }
+        // let person3 = {
+        //     name:"박현수",
+        //     age:22,
+        //     sayHello:function(){alert("안녕하세요! "+person3.name+"입니다.")}
+        // }
+        // person1.sayHello()
+        // person2.sayHello()
+        // person3.sayHello()
+
+
+        // 사람객체를 찍어서 쭉쭉 만들려고
+        function Person(userName,userAge){
+            this.name = userName
+            this.age = userAge
+            this.sayHello = function(){
+                alert("안녕하세요! "+this.name+"입니다.")
+            }
+        }
+        let person1 = new Person("정현진",38)
+        person1.sayHello()
+        let person2 = new Person("이혜리",37)
+        person2.sayHello()
+
+        
+
+    </script>
+
+
+</body>
+</html>

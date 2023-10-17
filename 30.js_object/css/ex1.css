@@ -1,0 +1,124 @@
+/* reset */
+*{margin:0;padding:0;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+img{max-width:100%;}
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+}
+.movieChart{
+    
+    background:#fefefe;
+    padding:50px 0;
+}
+.contentFrame{
+    width:980px;
+    
+    margin:0 auto;
+}
+.contentFrame h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+}
+.contentFrame h2 a{
+    font-size:0.7em;
+    font-weight: normal;
+    border:1px solid #ddd;
+    padding:5px 0;
+    padding-left:15px;
+    padding-right:20px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.30);
+}
+
+.movieList{
+    display:flex;
+} 
+.movieList>li{
+    flex:1;
+    margin-right:32px;
+}
+.movieList>li:last-of-type{margin-right:0;}
+.movieList>li>figure{
+    position:relative;
+    font-size:0;
+    border-radius: 10px;;
+    overflow: hidden;
+}
+.movieList>li>figure:after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background:linear-gradient(0deg,rgba(0,0,0,0.7),transparent);
+}
+.movieList>li:hover>figure:after{
+    display:none;
+}
+.movieList>li>figure span{
+    position: absolute;
+    left:20px;
+    bottom:0;
+    font-size:4rem;
+    color:#fff;
+    line-height: 100%;
+    z-index: 5;
+}
+.movieList>li:hover>figure span{
+    display: none;
+}
+.hidMenu{
+    font-size:14px;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.movieList>li:hover>figure .hidMenu{
+    display:flex;
+}
+.movieList>li:hover>figure{
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+.hidMenu>li{
+   padding:5px 26px;
+   border-radius: 6px;
+   background:#fb4357;
+   color:#fff;
+}
+.hidMenu>li:first-of-type{
+    margin-bottom:10px;
+    background:#fff;
+    color:#000;
+}
+.movieList>li>h3{
+    margin:12px 0;
+    width:170px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movieList>li dl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.movieList>li dl{line-height: 1;}
+.movieList>li dl dt img{
+    width:18px;
+}
+.movieList>li dl dd:first-of-type{margin-right:12px;}

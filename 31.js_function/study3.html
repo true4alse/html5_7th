@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수정의의 다른 표현</title>
+</head>
+<body>
+    <p>함수 정의할 때의 표현방식</p>
+    <p>함수를 정의할 때 기본방식으로 정의하면 해당되는 함수는 호이스팅된다.</p>
+    <p>여기서 호이스팅이란 끌어올려진다라는 뜻으로 함수가 정의가 된 시점과 관계없이 상위로 끌어올려지게 된다</p>
+    <p>변수선언방식으로 함수를 정의하면 호이스팅 되지 않는다</p>
+    <script>
+        
+        good1()
+        
+
+        // 기본방식
+        function good1(){
+            alert("good1")
+        }
+        // good1()
+
+        // 변수선언방식
+        
+        let good2 = function(){
+            alert("good2")
+        }
+        good2()
+       
+
+
+    </script>
+</body>
+</html>
