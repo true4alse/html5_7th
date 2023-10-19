@@ -1,8 +1,12 @@
 window.onload = function(){
 
     tabmenu(".tabMenu1","on")
-    tabmenu(".tabMenu2","active")
-    
+    // tabmenu(".tabMenu2","active")
+    tabmenu2({
+        selector:".tabMenu2",
+        activeName:"active"
+    })
+
     // let dt = document.querySelectorAll(".tabMenu1>dt")
     // for(let i=0 ; i<dt.length ; i++){
     //     dt[i].addEventListener("click",function(){

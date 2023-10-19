@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <p>자바스크립트 언어로 만들어진 라이브러리언어</p>
+    <p>코드를 쉽고 적게써서 사용하기 위해서</p>
+    <p>문서객체 접근하는데 용이함</p>
+
+    <h2>제이쿼리 설치</h2>
+    <ol>
+        <li>크롬에서 제이쿼리 검색후 다운로드 페이지로 이동</li>
+        <li>다운로드페이지에서 ctrl+s 단축키를 눌러서 제이쿼리파일을 저장</li>
+        <li>저장한 파일을 제이쿼리를 사용하려는 html파일에서 연결하여 설치</li>
+    </ol>
+    <script>
+        // let listArray = document.querySelectorAll("ol>li")
+        // for(let i=0 ; i<listArray.length ; i++){
+        //     listArray[i].style.color="red"
+        //     listArray[i].style.fontSize="50px"
+        // }
+        $("ol>li").css("color","red")
+        $("ol>li").css("font-size","50px")
+    </script>
+</body>
+</html>

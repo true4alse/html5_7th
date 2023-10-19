@@ -1,32 +1,14 @@
-/* reset */
-*{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6,strong,b{font-weight:inherit;font-size:inherit;}
-ul,ol{list-style: none;}
-a{text-decoration: none;color:inherit;}
-i,em,address{font-style: inherit;}
-img{max-width: 100%;}
-table{border-collapse: collapse;}
-
-/* font */
-@font-face {
-    font-family:"투썸굵은체";
-    src: url("../font/MARKPROBLACK.woff");
-}
-@font-face {
-    font-family: "투썸얇은체";
-    src: url("../font/MARKPROBOOK.woff");
-}
-
-@media (min-width:1025px){
-
-    /* common */
+@media (min-width:768px) and (max-width:1024px){
+     /* common */
 html{
-    font-size:18px;
+    font-size:16px;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.5;
 }
 .innerFrame{
-    width:1110px;margin:0 auto;
+    border:1px solid blue;
+    width:94%;
+    margin:0 auto;
 }
 main>div{padding:55px 0;}
 .f_en_bold{font-family:"투썸굵은체",sans-serif;}
@@ -69,22 +51,23 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding:0 60px;
+    padding:0 3%;
     box-sizing: border-box;
     overflow: hidden;
     background:#fff;
     transition:all 0.7s ease 0s;
     z-index: 1000;
 }
-header:hover{
-    height:440px;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
+header>nav.innerFrame{
+    display:none;
 }
+
 header>*{
     flex-shrink: 0;
 }
 .logo{
-    width:240px;
+    border:1px solid red;
+    width:20%;
     height:90px;
     display:flex;
     align-items: center;
@@ -93,7 +76,7 @@ header>*{
 .logo>h1>a{display:block;}
 .logo>h1>a img{width:100%;}
 .lnb{
-    width:240px;
+    width:20%;
     height:90px;
     display:flex;
     align-items: center;
@@ -147,7 +130,7 @@ main{
     padding-top:160px;
 }
 .sitePath{
-    width:1110px;
+    width:94%;
     margin:0 auto;
     font-size:0.8rem;
     font-weight:bold;
@@ -164,7 +147,9 @@ main{
     
 }
 .txtFrame{
-    width:460px;
+    width:54%;
+    padding-right:70px;
+    box-sizing: border-box;
 }
 .txtFrame h2{
     font-size:60px;
@@ -182,7 +167,7 @@ main{
 }
 
 .imgFrame{
-    width:444px;
+    width:46%;
     align-self: flex-end;
 }
 
@@ -335,7 +320,7 @@ footer{
     margin-bottom: 20px;
 }
 .fMenu>li{
-    margin-right: 38px;
+    margin-right:4%;
 }
 .footDl2{
     
@@ -514,15 +499,4 @@ footer{
     top:50px;
     cursor: pointer;
 }
-
-
 }
-
-
-
-
-
-
-
-
-
