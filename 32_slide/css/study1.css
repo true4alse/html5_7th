@@ -10,21 +10,27 @@ ul{list-style:none;}
     /* border:1px solid red; */
 }
 .train{
-    width:400%;
+    width:500%;
     height:100%;
     display: flex;
     transition:all 1s ease 0s;
 }
 .train>li{
-    width:25%;
+    /* width:20%; */
+    flex:1;
     height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;;
 }
 .train>li:nth-of-type(1){background:salmon;}
 .train>li:nth-of-type(2){background:blue;}
 .train>li:nth-of-type(3){background:green;}
 .train>li:nth-of-type(4){background:red;}
+.train>li:nth-of-type(5){background:lightcyan;}
+.train>li:nth-of-type(6){background:lightgreen;}
 .controler{
-    border:1px solid red;
     position:absolute;
     width:80%;
     left:50%;

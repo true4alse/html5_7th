@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트리스너 등록</title>
+    <style>
+        span{border:1px solid #000;padding:5px 20px;display:inline-block;cursor: pointer;}
+        .box{
+            border:1px solid #000;
+            margin-bottom:10px;
+            padding:10px;
+            width:400px;
+            height:0px;
+            overflow:hidden;
+            transition:all 1s ease 0s;
+        }
+        .box.on{
+            height:110px;
+        }
+    </style>
+    <script src="./js/study5.js"></script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur eligendi obcaecati vitae ut omnis esse dignissimos itaque quidem nihil, quibusdam dolor iure perspiciatis laboriosam commodi? Illo aliquam ex non.        
+    </div>
+
+    <span class="btn1">click1</span>
+    <!-- box클래스 영역이 글씨색이 파란색이 되었으면 -->
+    <span class="btn2">click2</span>
+    <!-- box클래스 영역이 글씨색이 빨간색이 되었으면 -->
+    <span class="btn3">open</span>
+    <!-- box클래스가 열리도록 -->
+    <span class="btn4">close</span>
+    <!-- box클래스가 닫히도록 -->
+    <span class="btn5">toggle</span>
+    <!-- box클래스가 열려있다면? 닫히도록 box클래스가 닫혀있다면? 열리도록 하는 기능 -->
+</body>
+</html>

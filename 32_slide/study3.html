@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>slider 활용</title>
     <link rel="stylesheet" href="./css/study3.css">
+    <script src="./js/study3.js"></script>
 </head>
 <body>
     <!-- 가로형 슬라이드 -->
     <div class="station">
         <ul class="train">
-            <li>
+            <li class="on">
                 <img src="./img/img1.jpg" alt="1">
                 <div class="flotingBox">
                     <h3>title1</h3>
@@ -59,6 +60,19 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita unde accusamus quisquam debitis nam commodi iusto cumque consectetur quis sed quod minima incidunt officiis laborum repudiandae, ab modi suscipit doloremque.</p>
                 </div>
             </li>
+        </ul>
+        <div class="ctler">
+            <span class="btn_prev ghost"><img src="./img/left.svg" alt="이전버튼"></span>
+            <span class="btn_next"><img src="./img/right.svg" alt="다음버튼"></span>
+        </div>
+        <ul class="page">
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
         </ul>
     </div>
 </body>
