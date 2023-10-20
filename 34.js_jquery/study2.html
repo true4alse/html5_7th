@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 - 기초 태그선택하기</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/study2.js"></script>
+    <style>
+        .des.on{background:red;}
+    </style>
+</head>
+<body>
+    <h1 id="bb" class="a">태그선택</h1>
+    <p>$("css선택자") -> $는 jQuery함수라는 뜻으로 문서안에서 css선택자 조건을 갖는 태그를 선택하여 함수가 사용된 자리에 제이쿼리문서객체를 리턴한다</p>
+
+    <h2>제이쿼리문서객체 메서드</h2>
+    <h3>제이쿼리문서객체.css("css속성명","css속성값")</h3>
+    <p>css()메서드는 제이쿼리문서객체에서 사용하는 메서드이며 선택한 태그의 스타일을 변경할 때 사용한다</p>
+
+    <h3>제이쿼리문서객체.get(0)</h3>
+    <p>get()함수를 통하여 제이쿼리 문서객체를 순수자바스크립트 문서객체로 전환하여 리턴할 수 있다</p>
+
+    <h3>$(document).ready(function(){})</h3>
+    <p>이 함수는 문서가 body태그 끝까지 읽혀진 뒤 한번 실행되는 예약 함수로 함수의 매개변수로는 동작을 넣어 표현한다</p>
+    <p>window.onload메서드와 동일하다</p>
+
+    <h3>attr("태그속성명","속성값")</h3>
+    <p>attr함수를 통해서 태그의 속성값을 변경할 수 있다(매개변수2개) / 속성에 적용된 속성값을 불러올 수도 있다(매개변수1개)</p>
+    <a class="naverlink" href="#" title="클릭하면 네이버로 이동됩니다">네이버로 바로가기</a>
+
+    <h3>text(바꿀내용)/html(바꿀내용태그포함)</h3>
+    <p>선택한 태그의 내용을 바꿀 때 사용하는 함수이고 태그의 내용에 태그문법이 포함된경우는 html메서드를 활용하고 그렇지않으면 text메서드를 사용한다</p>
+    <p>선택한 태그의 내용을 가져오려고 할때는 text()를 매개변수를 입력하지 않고 사용하면 가능하다</p>
+    <div class="textFrame">
+        아하하
+    </div>
+    <div class="abox">재미있는 제이쿼리!</div>
+
+    <h3>포함관계를 이용한 태그선택</h3>
+    <ul class="mom">
+        <li>next() - 선택한 태그 기준 다음형제 태그</li>
+        <li class="enom">prev() - 이전형제 태그</li>
+        <li>children() - 자식태그선택</li>
+        <li>parent() - 부모태그선택</li>
+    </ul>
+
+    <h3>eq(순번)</h3>
+    <p>선택한 태그가 여러개인 경우 eq()함수를 사용하여 순번을 입력하여 선택할 수 있다</p>
+
+    <h3>addClass("추가할클래스명") / removeClass("삭제할클래스명")</h3>
+    <p class="des">선택한 태그의 클래스를 추가하거나 삭제할 수 있다</p>
+    
+
+</body>
+</html>
