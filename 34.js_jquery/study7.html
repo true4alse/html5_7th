@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate()함수</title>
+    <style>
+        .box{width:300px;height:300px;background:red;}
+        .box1{background:green;}
+        .box2{background:blue;}
+        body{height:5000px;}
+    </style>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/study7.js"></script>
+</head>
+<body>
+    <h1>animate()함수</h1>
+    <p>기본형태 - animate({변형할 스타일 및 속성:속성 값},시간)</p>
+    <p>선택한 태그에 애니메이션을 적용할 때 사용하는 함수</p>
+    <p>이 함수에 의해 등록된 애니메이션은 별도의 애니메이션 큐공간에 적재된다</p>
+    <p>먼저 등록된 애니메이션이 실행되고 그 후에 등록된 애니메이션은 기다렸다가 실행된다</p>
+
+    <h2>애니메이션 제어함수</h2>
+    <p>stop() -> 현재 실행 중인 애니메이션큐를 정지함</p>
+    <p>clearQueue() -> 대기하고있는 애니메이션큐를 삭제하는 함수</p>
+    <p>delay(시간) -> 지정한 시간만큼 기다렸다가 다음 애니메이션을 시작</p>
+
+    <div class="box box1">box1!</div>
+    <div class="box box2">box2!</div>
+</body>
+</html>

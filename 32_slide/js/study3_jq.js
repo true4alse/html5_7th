@@ -48,6 +48,7 @@ $(document).ready(function(){
     // 페이지버튼 클릭 시 동작
     $(".page>li").click(function(){
         let idx = $(this).index()
+        count = idx
 
         // idx -> 0일때->(이전버튼고스트),6일때->(다음버튼고스트)
         if(idx==0){
