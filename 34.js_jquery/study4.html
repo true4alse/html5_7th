@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤이벤트</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/study4.js"></script>
+    <style>
+        body{height:5000px;border:1px solid red;}
+        h1{
+            transition:all 1s ease 0s;
+            position:fixed;left:0;top:0;width:100%;height:50px;background:#fff;border:1px solid #000;}
+        h1.on{background:#000;color:#fff;}
+    </style>
+</head>
+<body>
+    <h1>스크롤이벤트</h1>
+    <p>브라우저의 스크롤바가 움직일 때마다 실행되는 함수</p>
+    <h2>$(window).scroll(동작)</h2>
+    <p>이 함수는 스크롤바가 움직일 때 마다 입력한 동작이 식행되도록 하는 함수</p>
+    <h2>$(window).scrollTop()</h2>
+    <p>이 함수는 스크롤바가 현재 위에서 얼만큼 내려와있는지 숫자로 리턴해주는 함수</p>
+</body>
+</html>
