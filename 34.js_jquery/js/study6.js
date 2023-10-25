@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
         $(".am1,.am2,.am3").each(function(){
-            if(scrTop+(devHeight*0.60)>=$(this).offset().top){
+            if(scrTop>=$(this).offset().top-(devHeight*0.60)){
                 //스크롤바를 더 내려서 태그의 위치를 지나쳤다
                 $(this).addClass("on")
             }else{
