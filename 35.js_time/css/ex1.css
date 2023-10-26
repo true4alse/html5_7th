@@ -1,0 +1,30 @@
+*{margin:0;padding:0;}
+a{color:inherit;text-decoration: none;}
+ul,ol{list-style: none;}
+
+.stopwatch{
+    border:1px solid #000;
+    width:300px;
+    padding:10px;
+}
+.time{
+    border:1px solid #000;
+    font-size:5rem;
+}
+.controler{
+    /* border:1px solid #000; */
+    margin-top:10px;
+    display:flex;
+}
+.controler a{
+    border:1px solid #000;
+    flex:1;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.controler a:active{
+    background:#000;
+    color:#fff;
+}

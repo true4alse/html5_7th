@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout / setInterval</title>
+</head>
+<body>
+    <h1>setTimeout(동작,시간) 함수</h1>
+    <p>일정시간 뒤에 특정한 동작을 실행시키는 함수</p>
+    <p>setTimeout()함수는 실행됨과 동시에 예약동작을 멈출 수 있는 타이머가 그 자리에 리턴된다</p>
+    <p>clearTimeout()함수는 매개변수로 setTimeout()함수가 남기고간 타이머를 재료로 하여 예약된 동작을 멈출 수 있는 함수이다.</p>
+    <script>
+        let btnstop = setTimeout(function(){
+            alert("3초가 지났군...")
+        },3000)
+        clearTimeout(btnstop)
+    </script>
+
+    <h1>setInterval(동작,시간) 함수</h1>
+    <p>일정시간 마다 특정 동작을 반복하는 함수</p>
+    <script>
+        let second = 0
+        let btnstop2 = setInterval(function(){
+            second++
+            console.log(second+"초가 지났군...")
+        },1000)
+
+        clearInterval(btnstop2)
+    </script>
+
+
+</body>
+</html>

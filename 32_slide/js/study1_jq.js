@@ -12,7 +12,7 @@ $(document).ready(function(){
     
     btnNext.click(function(){
         count++
-        if(count>3){count=3}
+        if(count>3){count=0}
         // 기차가움직이는 코드
         train.css("transform","translateX("+(-25*count)+"%)")
         pageLI.removeClass("on")
@@ -27,7 +27,30 @@ $(document).ready(function(){
         pageLI.eq(count).addClass("on")
     })
 
+    // 자동기능
+    let timer1 = setInterval(function(){
+        count++
+        if(count>3){count=0}
+        // 기차가움직이는 코드
+        train.css("transform","translateX("+(-25*count)+"%)")
+        pageLI.removeClass("on")
+        pageLI.eq(count).addClass("on")
+    },3000)
 
+    $(".station").mouseover(function(){
+        clearInterval(timer1)
+    })
+
+    $(".station").mouseout(function(){
+        timer1 = setInterval(function(){
+            count++
+            if(count>3){count=0}
+            // 기차가움직이는 코드
+            train.css("transform","translateX("+(-25*count)+"%)")
+            pageLI.removeClass("on")
+            pageLI.eq(count).addClass("on")
+        },3000)
+    })
 
 
 })

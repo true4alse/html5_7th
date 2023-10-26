@@ -20,6 +20,12 @@ $(document).ready(function(){
         let targetTop = $(".contents_wrap>section").eq(idx).offset().top
 
         $("html,body").stop().animate({scrollTop:targetTop},1000)
+
+        //현재 활성화된 리스트 추가
+          $(".gnb>li").removeClass("on")
+          $(this).addClass("on")
+        //   $(".gnb>li").eq(idx).addClass("on")
+
     })
 
 })
