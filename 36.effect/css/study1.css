@@ -1,0 +1,42 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+
+.text-wrap{
+    width:100%;
+    font-size:80px;
+    font-weight:bold;
+    overflow:hidden;
+}
+.text-wrap>ul{
+    width:200%;
+    display:flex;
+}
+.text-wrap>ul>li{
+    border:1px solid red;
+    width:50%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+@keyframes move1{
+    0%{transform:translateX(100%);}
+    100%{transform:translateX(-100%);}
+}
+@keyframes move2{
+    0%{transform:translateX(0%);}
+    100%{transform:translateX(-200%);}
+}
+
+.a{
+    animation:move1 10s linear -10s infinite;
+}
+.b{
+    animation:move2 10s linear -5s infinite;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke:1px #000;
+    /*
+     비표준css로 벤더프리픽스 문법을 사용하여 표현을 한다.
+     -ms- / -o- / -webkit-
+    */
+    
+}

@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mousemove 이벤트</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/study10.js"></script>
+    <style>
+        *{margin:0;padding:0;}
+        .box{position:fixed;right:0;top:0;font-size:2rem;}
+        .contents{height:4000px;background:lightpink;}
+        .mouse{
+            background:red;
+            width:20px;
+            height:20px;
+            position:fixed;
+            left:0;
+            top:0;
+            z-index: 500;
+            pointer-events: none;
+            transition:width 1s ease 0s,height 1s ease 0s;
+        }
+        .mouse.on{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+        }
+        /* html{cursor:none;} */
+    </style>
 </head>
 <body>
-    
+    <div class="mouse"></div>    
+    <div class="contents"></div>
+    <div class="box">
+        <h1>mousemove()</h1>
+        <p>사용자가 마우스를 움직일 때마다 실행되는 함수</p>
+        <p>
+            문서기준X좌표:<span class="coords_x">0</span>
+            <br>
+            문서기준Y좌표:<span class="coords_y">0</span>
+        </p>
+        <p>
+            화면기준X좌표:<span class="coords_x2">0</span>
+            <br>
+            화면기준Y좌표:<span class="coords_y2">0</span>
+        </p>
+    </div>
 </body>
 </html>

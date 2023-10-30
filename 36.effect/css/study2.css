@@ -1,0 +1,73 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+i,em{font-style: inherit;}
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* common */
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.intro{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.text h1{
+    font-size:3rem;
+    line-height: 1;
+}
+.text h1>b{
+    font-size:2em;
+}
+.text>p{
+    text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideLtoR{
+    0%{
+        opacity: 0;
+        transform:translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0%);
+    }
+}
+
+.text h1>b{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+/* .text h1>b>i{
+    opacity: 0;
+} */
+/* .text h1>span>i{
+    opacity: 0;
+} */
+.pp{width:300px;}
+/* .pp i{
+    opacity: 0;
+} */
+.text h1>b>i:nth-of-type(1){animation:intro 1s ease 0s forwards;}
+.text h1>b>i:nth-of-type(2){animation:intro 1s ease 0.1s forwards;}
+.text h1>b>i:nth-of-type(3){animation:intro 1s ease 0.2s forwards;}
+.text h1>b>i:nth-of-type(4){animation:intro 1s ease 0.3s forwards;}
+.text h1>b>i:nth-of-type(5){animation:intro 1s ease 0.4s forwards;}
+.text h1>b>i:nth-of-type(6){animation:intro 1s ease 0.5s forwards;}
+.text h1>b>i:nth-of-type(7){animation:intro 1s ease 0.6s forwards;}
