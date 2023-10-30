@@ -22,7 +22,20 @@ $(document).ready(function(){
     })
     textAnimation(".pp",{
         delay:0.01,
-        aniName:"slideLtoR"
+        aniName:"slideBtoT"
+    })
+
+    $(".buttonChar").click(function(){
+        textAnimation(".tit1",{
+            delay:0.01,
+            aniName:"slideBtoT"
+        })
+        textAnimation(".par1",{
+            delay:0.01,
+            aniName:"scaleUtoD"
+        })
+
+
     })
     
 
