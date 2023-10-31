@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./study1.css">
+</head>
+<body>
+    <div class="wrap">
+        <section class="intro">
+            <div>
+                <h1>UI.UX DESIGN</h1>
+                <p class="chat"></p>
+            </div>
+        </section>
+    </div>
+    <script>
+        let words = "i want to create ux"
+        // "i want to create ux"
+        // stringsResult+=mywishes[0][0]
+
+        let result = ""
+        let count = 0
+        let tag = document.querySelector(".chat")
+        let timer = setInterval(function(){
+            if(count>words.length-1){
+                clearInterval(timer)
+                return
+            }
+            result += words[count]
+            tag.innerHTML = result
+            count++
+        },100)
+
+        
+
+
+        // document.querySelector(".chat").innerHTML = 
+
+    </script>
+</body>
+</html>

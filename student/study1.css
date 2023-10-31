@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+ul,ol{list-style: none;}
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.chat{
+    font-size:0.7em;
+    text-transform: uppercase;
+    border-right:10px solid #000;
+    display: inline-block;
+    padding-right:3px;
+    line-height: 1;
+    animation: border-twinkle 0.2s linear 0s infinite;
+}
+.intro{
+    line-height: .7;
+    height:100vh;
+    display:flex;
+    font-size:10rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+@keyframes border-twinkle {
+    0%{border-right:10px solid #000;}
+    100%{border-right:10px solid transparent;}
+}
