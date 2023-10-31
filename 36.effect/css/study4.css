@@ -1,0 +1,129 @@
+/* reset */
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size:inherit;}
+strong,b{font-weight: inherit;}
+i,em{font-style: inherit;}
+table{border-collapse: collapse;}
+img{max-width: 100%;}
+a{color: inherit;text-decoration: none;}
+
+/* common */
+html{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    background:#eee;
+}
+
+/* layout ->크기지정 및 배치 */
+/* 큰->작 */
+.wrap{
+    max-width: 1920px;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+header{
+    
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+}
+.sns{
+    display:flex;
+}
+.sns>li{
+    margin-right:10px;
+    font-size:30px;
+}
+.sns>li:last-of-type{margin-right:0;}
+header>h1{
+    line-height: 0;
+    box-shadow:5px 5px 10px black;
+}
+.station{
+    
+    overflow: hidden;
+}
+.pagination{
+    
+    display:flex;
+    padding:0 30px;
+    font-size:20px;
+    margin-bottom:80px;
+}
+.pagination>li{
+    margin-right:20px;
+    cursor: pointer;
+}
+.train{
+    width:4600px;
+    height:500px;
+    display:flex;
+    transition:all 1s ease 0s;
+}
+.train>li{
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    width:180px;
+    height:400px;
+    margin-right:20px;
+    background:#fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position:relative;
+    transition:all 0.5s ease 0s;
+}
+.train>li img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.train>li.on{
+    width:780px;
+    height:500px;
+}
+.train>li>p{
+    display:none;
+}
+.btnClose{
+    display:none;
+}
+.title{
+    position:absolute;
+    left:0;
+    bottom:70px;
+    width:100%;
+    padding:20px 0;
+    text-align: center;
+    font-size: 20px;
+    background:#000;
+    color:#fff;
+    transition:all 0.5s ease 0s;
+}
+.train>li.on .title{
+    bottom:200px;
+    padding:30px 0;
+    font-size:30px;
+    background: rgba(0,0,0,0.5);
+}
+.train>li.on>p{
+    display:block;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    padding:20px;
+    background:#000;
+    color:#fff;
+    text-align: right;
+}
+.train>li.on .btnClose{
+    display:block;
+    position:absolute;
+    right:50px;
+    bottom:220px;
+    padding:20px;
+    cursor: pointer;
+}
+.btnClose:hover{
+    background:#fff;
+    color:#000;
+}
