@@ -41,7 +41,7 @@ header>h1{
     box-shadow:5px 5px 10px black;
 }
 .station{
-    
+    border:1px solid red;
     overflow: hidden;
 }
 .pagination{
@@ -118,12 +118,88 @@ header>h1{
 .train>li.on .btnClose{
     display:block;
     position:absolute;
-    right:50px;
-    bottom:220px;
+    right:20px;
+    top:20px;
     padding:20px;
     cursor: pointer;
 }
 .btnClose:hover{
     background:#fff;
     color:#000;
+}
+.mouse.scroll{
+    display:block;
+}
+.mouse{
+    display:none;
+    position:fixed;
+    left:600px;
+    top:230px;
+    z-index: 100;
+}
+.mouseBody{
+    border:1px solid #000;
+    width:30px;
+    height:55px;
+    margin:0 auto;
+    margin-bottom:5px;
+    border-radius: 40px;
+    position:relative;
+}
+.ball{
+    position:absolute;
+    font-size:0px;
+    width:10px;
+    height:10px;
+    background:#000;
+    border-radius: 50%;
+    left:50%;
+    margin-left:-5px;
+    top:0;
+    animation:mouseball 1s ease 0s infinite;
+}
+@keyframes mouseball {
+    0%{
+        top:8px;
+    }
+    100%{
+        top:38px;
+    }
+}
+.innerWrap{
+    width:1000px;
+    margin:0 auto;
+    display:flex;
+}
+.innerWrap>section>img{
+    width:70%;
+    height:100%;
+    object-fit: contain;
+}
+.innerWrap>*{flex:1}
+.innerWrap>*:nth-of-type(2)>*{margin:10px 0;}
+.innerWrap>*:nth-of-type(2)>h2{
+    font-size:2em;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.wrap>h1{
+    font-size:3rem;
+    font-weight:bold;
+    text-align: center;
+    padding:100px 0;
+}
+.btnLink {
+    display:none;
+    position: absolute;
+    padding: 20px;
+    /* background: #000; */
+    color: #fff;
+    right: 20px;
+    top: 225px;
+    text-decoration: underline;
+}
+.train>li.on .btnLink{display:block;}
+.btnLink:hover{
+    background:#000;
 }

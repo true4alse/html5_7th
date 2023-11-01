@@ -3,11 +3,12 @@ $(document).ready(function(){
     let result = ""
     for(let i=0 ; i<artwork.length ; i++){
         result += `<li>
-        <img src="./img/${artwork[i].imgFileName}" alt="${artwork[i].title}">
-        <h2 class="title">${artwork[i].title}</h2>
-        <p>${artwork[i].description}</p>
-        <span class="btnClose">close</span>
-    </li>`
+                        <img src="./img/${artwork[i].imgFileName}" alt="${artwork[i].title}">
+                        <h2 class="title">${artwork[i].title}</h2>
+                        <p>${artwork[i].description}</p>
+                        <span class="btnClose">close</span>
+                        <a class="btnLink" href="./study4detail.html?gid=${i}">detail more</a>
+                    </li>`
     }
     $(".train").html(result)
 
@@ -61,6 +62,30 @@ $(document).ready(function(){
         return false
         // 이벤트 버블링을 막기위해서 return false를 사용
         // 이벤트 버블링 - 클릭한 태그의 상위 태그들에게 순차적으로 클릭한 이벤트효과가 전달되는 특징
+    })
+
+    $(document).mousemove(function(event){
+        let x=event.clientX
+        let y=event.clientY
+        console.log(x,y)
+        $(".mouse").css("left",x+20)
+        $(".mouse").css("top",y+20)
+    })
+    
+    let state = false
+
+    $(".station").mouseover(function(){
+        if(state==false){
+            $(".mouse").addClass("scroll")
+            state=true
+        }
+    })
+
+    $(".station").mouseout(function(){
+        if(state==true){
+            $(".mouse").removeClass("scroll")
+            state=false
+        }
     })
 
 
