@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+.board{
+    border:1px solid red;
+    width:800px;
+}
+
+.a{
+    transition:all 1s ease 0s;
+    fill:darkcyan;
+    stroke:blue;
+    stroke-width:1;
+    stroke-dasharray:314;
+    stroke-dashoffset: 314;
+}
+.a:hover{
+    stroke-dashoffset: 0;
+}
+.b{
+    transition:all 1s ease 0s;
+    fill:darkorange;
+    stroke:red;
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+}
+.b:hover{
+    stroke-dashoffset: 0;
+}

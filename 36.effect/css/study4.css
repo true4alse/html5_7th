@@ -131,10 +131,11 @@ header>h1{
     display:block;
 }
 .mouse{
+    pointer-events: none;
     display:none;
     position:fixed;
-    left:600px;
-    top:230px;
+    /* left:600px;
+    top:230px; */
     z-index: 100;
 }
 .mouseBody{
@@ -156,7 +157,7 @@ header>h1{
     left:50%;
     margin-left:-5px;
     top:0;
-    animation:mouseball 1s ease 0s infinite;
+    animation:mouseball 1s ease 0s infinite alternate;
 }
 @keyframes mouseball {
     0%{

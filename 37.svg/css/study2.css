@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+.box{
+    border:1px solid #000;
+    width:600px;
+}
+.a{
+    transition:all 1s ease 0s;
+    fill:aquamarine;
+    stroke: red;
+    /* stroke-dasharray: 314;
+    stroke-dashoffset: 314; */
+}
+.box:hover .a{
+    stroke-dashoffset: 0!important;
+}
+.box2{
+    border:1px solid #000;
+    width:400px;
+}
+.my1{
+    transition:all 1s ease 0s;
+    fill:none;
+    stroke:red;
+}
+.box2:hover .my1{
+    stroke-dashoffset: 0!important;
+}
