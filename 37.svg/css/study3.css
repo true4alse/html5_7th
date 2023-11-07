@@ -1,0 +1,15 @@
+*{margin:0;padding:0;}
+
+.intro{
+    border:1px solid red;
+}
+.intro path{
+    fill:red;
+    stroke: lime;
+}
+.intro .intro1path{
+    fill:purple;
+}
+.intro .intro8path{
+    fill:aqua;
+}

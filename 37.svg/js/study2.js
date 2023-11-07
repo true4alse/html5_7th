@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+
+    // $("#btn").css("color","black")
+    // document.querySelector("#btn").style.color="black"
+    // $("#btn").get(0).style.color="black"
+
     let pathLength = $(".a").get(0).getTotalLength()
     // getTotalLength()메서드는 자바스크립트 메서드이기 때문에 앞에 선택한 태그가 자바스크립트 문서객체여야만 사용할 수 있다.
     $(".a").css("stroke-dasharray",pathLength)
