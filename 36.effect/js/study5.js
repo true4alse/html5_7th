@@ -59,6 +59,8 @@ $(function(){
             $(".train>li").eq(idx).children("b").css("opacity",1-sPer);
             $(".train>li").eq(idx).children("b").css("transform",`scale(${2-sPer})`);
 
+            // 뒷배경 svg 진행도에 따라서 그려지는 소스
+            $(".svg_percent .txt").css("stroke-dashoffset",pathLength-(pathLength*per/100))
         }
         if(distance>=aniEnd){
             console.log("벗어난상태임")
@@ -68,6 +70,9 @@ $(function(){
 
     })
 
+    let pathLength = $(".svg_percent .txt").get(0).getTotalLength()
+    $(".svg_percent .txt").css("stroke-dasharray",pathLength)
+    $(".svg_percent .txt").css("stroke-dashoffset",pathLength)
 
     
 })

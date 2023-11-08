@@ -4,12 +4,12 @@
     border:1px solid red;
 }
 .intro path{
-    fill:red;
-    stroke: lime;
+    fill:transparent;
+    stroke: black;
+    stroke-width: 5;
+    /* transition:width 1s ease 0s,height 2s ease 0s; */
 }
-.intro .intro1path{
-    fill:purple;
-}
-.intro .intro8path{
-    fill:aqua;
+.intro.on path{
+    stroke-dashoffset: 0!important;
+    fill:black;
 }
