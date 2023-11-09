@@ -1,0 +1,22 @@
+*{margin:0;padding:0;}
+ body{
+    height:10000px;
+ }
+.box{
+    height:100vh;
+    border:1px solid red;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+}
+.box svg{
+    height:100%;
+}
+.spiral{
+    fill:none;
+    stroke:none;
+}
+#txtPath{
+    font-size: 12px;
+}

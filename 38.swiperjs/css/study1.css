@@ -1,0 +1,46 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+.wrap{}
+.intro{
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:5rem;
+    text-transform: uppercase;
+}
+.station1{
+    width:50%;
+    height:500px;
+}
+.train1 li img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.skill{
+    height:100vh;
+    display:flex;
+}
+.skill>section{
+    width:50%;
+    height:100%;
+}
+.skill>section img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.desc{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.desc .txt{
+    width:80%;
+    font-size:2rem;
+}
+.desc .txt h3{
+    font-size: 3em;
+    margin-bottom:20px;
+}
