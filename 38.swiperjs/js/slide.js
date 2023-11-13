@@ -21,7 +21,6 @@ $(document).ready(function(){
     })
 
     slider2.on("slideChange",function(){
-        console.log(slider2.activeIndex)
         $(".txt").html(contents2[slider2.activeIndex])
     })
 
@@ -36,5 +35,48 @@ $(document).ready(function(){
         <p>consectetur adipisicing elit. Quas consequuntur tenetur iusto earum magni tempore ex culpa vero nesciunt veritatis aliquam, at similique doloremque facilis facere dolores! Modi, cupiditate quisquam!</p>`
     ]
 
+    let gallerySlider = new Swiper(".galleryStation",{
+        slidesPerView:3,
+        speed:1000,
+        loop:true,
+        breakpoints:{
+            280:{
+                slidesPerView:1,
+            },
+            320:{
+                slidesPerView:1.3,
+            },
+            768:{
+                slidesPerView:2,
+            },
+            1024:{
+                slidesPerView:3,
+            }
+        }
+    })
 
+    let noticeTxtSlider = new Swiper(".noticeTxtStation",{
+        direction:"vertical",
+    })
+
+    let noticeImgSlider = new Swiper(".noticeImgStation",{
+        autoplay:{
+            delay:0
+        },
+        speed:2000,
+        loop:true,
+        on:{
+            slideChange:function(){
+                noticeTxtSlider.slideTo(this.realIndex)
+                console.log(this.realIndex)
+                // 반복루프모드에서는 현재 보여지는 슬라이드의 순번을 realIndex로 추적할 수 있다
+            }
+        },
+        slidesPerView:3,
+        effect:'coverflow'
+    })
+
+    
+
+    
 })

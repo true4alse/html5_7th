@@ -9,7 +9,8 @@ ul{list-style: none;}
     overflow: hidden;
 }
 .train{
-    /* width:calc(500%/3); */
+    /* 리스트가 5개/1칸씩 보이는 슬라이드 -> 리스트가 10개 / 4칸씩 보이는 슬라이드 */
+    /* width:1000%/4; */
     height:100%;
     display:flex;
     transition:transform 1s ease 0s;

@@ -1,0 +1,34 @@
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+
+.tabMenu{
+    border:1px solid red;
+    width:500px;
+    min-height:200px;
+    /* overflow-y: scroll; */
+    position:relative;
+}
+.tabMenu>dt{
+    border:1px solid blue;
+    float:left;
+    height:50px;
+    width:80px;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabMenu>dt.on{
+    background:#000;
+    color:#fff;
+}
+.tabMenu>dd{
+    border:1px solid green;
+    position:absolute;
+    left:0;
+    top:50px;
+    display:none;
+}
+.tabMenu>dt.on+dd{
+    display:block;
+}
