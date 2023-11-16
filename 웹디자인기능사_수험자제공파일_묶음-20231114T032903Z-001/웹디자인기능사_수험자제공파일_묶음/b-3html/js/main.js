@@ -14,19 +14,15 @@ $(function(){
 
     $(".firstNotice").click(function(){
         $(".popup").addClass("on")
+        // $(".modal_cover").addClass("on")
     })
 
     $(".btnClosePopup").click(function(){
         $(".popup").removeClass("on")
+        // $(".modal_cover").removeClass("on")
     })
 
-    $(".gnb").mouseover(function(){
-        $("header").addClass("show")
-    })
-
-    $(".gnb").mouseout(function(){
-        $("header").removeClass("show")
-    })
+   
     
 
 })
