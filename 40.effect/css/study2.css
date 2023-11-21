@@ -1,0 +1,40 @@
+*{margin:0;padding:0;}
+/* body{background:#222;} */
+.box{
+    /* border:5px solid lime; */
+    height:100vh;
+    background: url("../img/img7.jpg") no-repeat 50% 50%;
+    font-size:350px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:transparent;
+    -webkit-background-clip: text;
+    line-height: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.bb {
+    border:5px solid lime;
+    font-size: 1rem;
+    font-weight: bold;
+    background: pink url(../img/img7.jpg) no-repeat 50% 50%;
+    /* color: transparent; */
+    background-blend-mode: luminosity;
+    padding: 10px;
+    -webkit-background-clip: content-box;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.bbwrap{
+    width:80%;
+}
+.frame{
+    display: flex;
+}

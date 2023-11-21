@@ -1,0 +1,40 @@
+*{margin:0;padding:0;}
+.box{
+    width:600px;
+    height:600px;
+    background:red;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    transition:all 1s ease 0s;
+}
+.box:hover{
+    clip-path: polygon(50% 0%, 58% 41%, 100% 29%, 59% 60%, 93% 84%, 0 88%, 35% 61%, 0% 43%, 40% 42%);
+}
+.box2{
+    background:#222;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    font-size:150px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke:1px aqua;
+    position:relative;
+}
+.a:after{
+    /* border:1px solid yellow; */
+    content:"welcome";
+    color:aqua;
+    animation:wave 4s ease 0s infinite alternate;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+@keyframes wave {
+    0%{clip-path: polygon(0 53%, 10% 44%, 22% 39%, 37% 39%, 51% 45%, 61% 54%, 74% 59%, 86% 57%, 100% 52%, 100% 100%, 0 100%);}
+    100%{clip-path: polygon(0 53%, 11% 59%, 24% 60%, 36% 55%, 48% 46%, 61% 39%, 75% 38%, 88% 41%, 100% 52%, 100% 100%, 0 100%);}
+}
