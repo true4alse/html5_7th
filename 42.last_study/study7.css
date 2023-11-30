@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{text-decoration: none; color: inherit;}
+ul,li{list-style: none;}
+img{max-width: 100%;}
+
+body{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+@font-face {
+    font-family: "jiyeon";
+    src: url(./font/나눔손글씨\ 중학생.ttf);
+}
+@font-face {
+    font-family: "hyeri";
+    src: url(./font/NanumBrush.ttf);
+}
+@font-face {
+    font-family: "jiyeong";
+    src: url(./font/EliceDXNeolli-Light.ttf);
+}
+@font-face {
+    font-family: "haeun";
+    src: url(./font/KCC-Chassam.ttf);
+}
+@font-face {
+    font-family: "all";
+    src: url(./font/NotoSansKR-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'omyu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "yeonghwan";
+    src: url(./font/ChosunCentennial_ttf.ttf);
+}
+.wrap>section{
+    min-height: 100vh;
+}
+.wrap>section>p{
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+.wrap>section>p.on{
+    opacity: 1;
+}
+.start{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "jiyeon";
+}
+.start>p{
+    font-size: 7.5rem;
+}
+.real_start{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "jiyeon";
+
+    background: white;
+    background-size: cover;
+    background-position: center center;
+}
+.jiyeon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "jiyeon";
+    flex-direction: column;
+    font-size: 2.5rem;
+
+    background: url(./1x/ji_yeon.png);
+    background-size: cover;
+    background-position: center center;
+}
+.hyeri{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "hyeri";
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    background: url(./1x/hyeri.png);
+    background-size: cover;
+    background-position: center center;
+}
+.hyeri>p{
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.jiyeong{
+    font-family: "jiyeong";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+    background: url(./1x/jiyeong.png);
+    background-size: cover;
+    background-position: center center;
+}
+.haeun{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "haeun";
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    background: url(./1x/haeun.png);
+    background-size: cover;
+    background-position: center center;
+}
+.hyunsu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "jiyeon";
+    text-align: center;
+    font-size: 2rem;
+
+    background: url(./1x/hyunsu.png);
+    background-size: cover;
+    background-position: center center;
+}
+.hyunsu>p>span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.sieun{
+    font-family: "jiyeon";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    line-height: 1.8;
+
+    background: url(./1x/sieun.png);
+    background-size: cover;
+    background-position: center center;
+}
+.minjae{
+    font-family: "jiyeon";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+
+    background: url(./1x/minjae.png);
+    background-size: cover;
+    background-position: center center;
+}
+.yeonghwan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "yeonghwan";
+    font-weight: bold;
+
+    background: url(./1x/yeonghwan.png);
+    background-size: cover;
+    background-position: center center;
+}
+.jiwon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.donghyun{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "jiyeon";
+    font-weight: bold;
+
+    background: url(./1x/donghyun.png);
+    background-size: cover;
+    background-position: center center;
+}
+.donghyun>img{
+    transition: all 2s ease 0s;
+    position: absolute;
+    top: 0px;
+    left: -500px;
+}
+.ending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "jiyeon";
+
+    background: url(./1x/완성본.png);
+    background-size: cover;
+    background-position: center center;
+}
+.ending>h1{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 1s ease 5s;
+}
+
+
+.wrap_j.jiwon{
+    background: url(./1x/bg2.jpg) no-repeat 0 0 / cover;
+    height: 100vh;
+    font-family: 'omyu';
+    position: relative;
+}
+.jiwon>.inner{
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px;
+}
+.jiwon h3{
+    font-size: 55px;
+    background: rgba(255, 255, 255, 0.535);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.jiwon p{
+    font-size: 55px;
+    background: rgba(255, 255, 255, 0.535);
+    padding: 10px 20px;
+    display: inline-block;
+    /* margin-right: 30px; */
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.jiwon .images{
+    display: grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+}
+.jiwon .images img{
+    cursor: pointer;
+}
+
+.jiwon .popup_images>li{
+    display: none;
+}
+.jiwon .popup_images>li.pop{
+    display: block;
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+}
+.jiwon .popup_images>li>img{
+    width: 100%
+}
+.jiwon .modal{
+    display: none;
+}
+.jiwon .modal.pop{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #333333b5;
+}
+.jiwon .close{
+    display: none;
+}
+.jiwon .modal.pop>.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    background: white;
+    margin-top: 45%;
+    margin-left: 85%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.jiwon .control{
+    display: none;
+}
+.jiwon .control.pop{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    color: white;
+    font-size: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jiwon .last{
+    padding: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 20px #d79595;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+.jiwon .last_popup{
+    display: none;
+}
+.jiwon .last_popup.pop{
+    display: flex;
+    width: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jiwon .last_popup>li{
+    flex: 1;
+}
+.jiwon .last_popup.pop>li:first-of-type{
+    animation:bounce 1s ease-in 0s alternate infinite;
+}
+.jiwon .last_popup.pop>li:last-of-type{
+    animation: bye 1s ease-in-out 0s alternate infinite;
+}
+@keyframes bye {
+    0%{transform: rotate(-5deg);}
+    100%{transform: rotate(5deg);}
+}
+@keyframes bounce {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
